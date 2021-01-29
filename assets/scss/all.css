@@ -10873,6 +10873,65 @@ a.text-dark:focus, a.text-dark:hover {
   text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+.btn-primary {
+  background-color: #3A6AB5;
+  border-color: #3A6AB5;
+  padding: 8px 50px 8px 50px;
+}
+
+.btn-pricing {
+  background-color: #274778;
+  border-color: #274778;
+  padding: 8px 50px 8px 50px;
+  border-radius: 40px;
+}
+
+.btn-pricing a {
+  color: #fefefe;
+}
+
+.btn-pricing a :hover, .btn-pricing a :active {
+  background-color: #455FA5;
+  border-color: #455FA5;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #3A6AB5;
+  border: solid 0.75px #adb5bd;
+  border-radius: 50px;
+}
+
+.nav-pills .nav-link {
+  color: #767676;
+  border-radius: 50px;
+  border: solid 0.75px #adb5bd;
+  padding: 10px 30px;
+}
+
+.nav-item {
+  padding: 6px;
+}
+
+.nav-item a {
+  color: #414141;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.nav-item:hover, .nav-item :active, .nav-item :focus {
+  border-color: #455FA5;
+  text-decoration: none;
+  background-color: #dee2e6;
+  border-radius: 50px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  border-radius: 50px;
+  padding: 10px 30px;
+}
+
 .img-big {
   margin-bottom: 20px;
 }
