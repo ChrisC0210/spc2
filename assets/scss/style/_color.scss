@@ -13,32 +13,14 @@ $gray-800: #414141 !default;
 $gray-900: #212529 !default;
 $black: #141414 !default;
 //
-//hks
-$hks-blue: #4B8ED1 !default;
-$hks-blue-600: #455FA5 !default;
-$hks-gray: #767676 !default;
-//vela
-$vela-green-400: #6C838B !default;
-$vela-green: #1E646E !default;
-$vela-green-600: #0F525C !default;
-$vela-blue: #023459 !default;
-$vela-red: #AF3737 !default;
 //spc
-$spc-blue-400: #2c5a92 !default;
-$spc-blue: #1b477c !default;
-$spc-blue-600: #133a69 !default;
-//header hover color
-$ap-pink-200: #F4E2E3 !default;
-$ap-pink-600: #FBAFB8 !default;
-$ap-orange-200: #FAC6A4 !default;
-$ap-orange-600: #EC965E !default;
-$ap-brown-100: #E8E5E2 !default;
-$ap-brown-200: #EBD1B5 !default;
-$ap-brown-600: #886b4c !default;
-$ap-purple-200: #e7c8de !default;
-$ap-purple-600: #DBA7CC !default;
-$ap-yellow-200: #FFF291 !default;
-$ap-yellow-600: #fee100 !default;
+$spc-blue-400: #3A6AB5 !default;
+$spc-blue: #274778 !default;
+$spc-blue-600: #455FA5 !default;
+$spc-red-400: #C80C30 !default;
+$spc-red: #96172E !default;
+$spc-gray: #707070 !default;
+//
 //color
 .white {
     color: $white !important;
@@ -84,37 +66,6 @@ $ap-yellow-600: #fee100 !default;
     color: $black;
 }
 
-//hks
-.hks-blue {
-    color: $hks-blue;
-}
-
-.hks-blue-600 {
-    color: $hks-blue-600;
-}
-
-//
-//vela
-.vela-green-400 {
-    color: $vela-green-400;
-}
-
-.vela-green {
-    color: $vela-green;
-}
-
-.vela-green-600 {
-    color: $vela-green-600;
-}
-
-.vela-blue {
-    color: $vela-blue;
-}
-
-.vela-red {
-    color: $vela-red;
-}
-
 //spc
 .spc-blue-400 {
     color: $spc-blue-400;
@@ -128,58 +79,20 @@ $ap-yellow-600: #fee100 !default;
     color: $spc-blue-600;
 }
 
+.spc-red-400 {
+    color: $spc-red-400;
+}
+
+.spc-red {
+    color: $spc-red;
+}
+
+.spc-red {
+    color: $spc-gray;
+}
+
 //
-.ap-pink-200 {
-    color: $ap-pink-200;
-}
-
-.ap-pink-600 {
-    color: $ap-pink-600;
-}
-
-.ap-orange-200 {
-    color: $ap-orange-200;
-}
-
-.ap-orange-600 {
-    color: $ap-orange-600;
-    &:hover {
-        color: $ap-orange-600;
-    }
-}
-
-.ap-brown-100 {
-    color: $ap-brown-100;
-}
-
-.ap-brown-200 {
-    color: $ap-brown-200;
-}
-
-.ap-brown-600 {
-    color: $ap-brown-600;
-}
-
-.ap-purple-200 {
-    color: $ap-purple-200;
-}
-
-.ap-purple-600 {
-    color: $ap-purple-600;
-}
-
-.ap-yellow-200 {
-    color: $ap-yellow-200;
-}
-
-.ap-yellow-600 {
-    color: $ap-yellow-600;
-}
-
-.ap-brown-100-bg {
-    background-color: $ap-brown-100;
-}
-
+//
 //https://www.cssmatic.com/box-shadow
 .nb-box-shadow {
     box-shadow: 1px -4px 15px -2px rgba(112, 112, 112, 0.42);

@@ -5,13 +5,12 @@
 //XX Style
 @import "../scss/style/color";
 @import "../scss/style/fonts";
-@import "../scss/style/banner";
-@import "../scss/style/btn";
-@import "../scss/style/card";
+//@import "../scss/style/banner";
+//@import "../scss/style/btn";
+//@import "../scss/style/card";
 @import "../scss/style/img";
-@import "../scss/style/nav";
+//@import "../scss/style/nav";
 @import "../scss/style/footer";
-@import "../scss/style/timeline";
 //@import "../scss/style/slick";
 //element
 //@import "../scss/elment/parallax";
@@ -20,6 +19,6 @@
     //background-color: red;
     padding: .75rem 0rem;
     a {
-        color: $hks-blue;
+        color: $spc-blue;
     }
 }
