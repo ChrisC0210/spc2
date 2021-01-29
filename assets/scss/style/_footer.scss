@@ -1,0 +1,23 @@
+.footer-link {
+    a {
+        color: $white;
+    }
+}
+
+.footer-spc-logo {
+    img {
+        width: 200px;
+        @media screen and (max-width: 500px) {
+            width: 170px;
+        }
+    }
+    margin-bottom: 40px;
+}
+
+.footer-box {
+    p {
+        @media screen and (max-width: 500px) {
+            text-align: center;
+        }
+    }
+}

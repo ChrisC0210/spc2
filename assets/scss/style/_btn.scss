@@ -1,0 +1,85 @@
+.btn-primary {
+	background-color: $vela-green-400;
+	border-color: $vela-green-400;
+	padding: 8px 50px 8px 50px;
+}
+
+.btn-pricing {
+	background-color: $hks-blue;
+	border-color: $hks-blue;
+	padding: 8px 50px 8px 50px;
+	border-radius: 40px;
+
+	a {
+		color: $white;
+
+		:hover,
+		:active {
+			background-color: $hks-blue-600;
+			border-color: $hks-blue-600;
+		}
+	}
+}
+
+	//vela
+	.btn-navRight {
+		color: $vela-green;
+
+		a {
+			color: $vela-green;
+			&:hover,:active, :focus {
+				//background-color:$vela-green-600;
+				border-color:$vela-green-600;
+				text-decoration: none;
+				font-weight: 600;
+			}
+		}
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+	background-color: $vela-green-400;
+	border: solid 0.75px $gray-500;
+	border-radius: 50px;
+}
+.nav-pills .nav-link {
+	color: $gray-700;
+	border-radius: 50px;
+	border: solid 0.75px $gray-500;
+	padding: 10px 30px;
+}
+.nav-item{
+	padding: 6px;
+	a {
+		color: $gray-800;
+		text-decoration: none;
+		background-color: transparent;
+	}
+	&:hover,:active, :focus {
+		//background-color:$vela-green-600;
+		border-color:$vela-green-600;
+		text-decoration: none;
+		background-color: $gray-300;
+		border-radius: 50px;
+	}
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  border-radius: 50px;
+  padding: 10px 30px;
+}
+.btn-job{
+	//width: 100px;
+	//height: 40px;
+	border-radius: 50px;
+	padding: 10px 20px;
+	&:hover,:active, :focus {
+		//background-color:$vela-green-600;
+		border-color:$vela-green-600;
+		text-decoration: none;
+		background-color: $vela-green-600;
+		border-radius: 50px;
+	}
+	@media screen and (max-width: 500px) {
+		border-radius: 40px;
+		font-size: 10px;
+	}
+}

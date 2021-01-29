@@ -1,0 +1,135 @@
+.banner-box {
+    background-color: #E4F2F3;
+    height: 200px;
+    .banner-text {
+        padding-top: 68px;
+    }
+}
+
+.qa-box {
+    background-color: #F4F4F4;
+    height: 100%;
+}
+
+.header-bg {
+    background-color: $white;
+    box-shadow: 0 0 0.5em rgb(138, 138, 138);
+}
+
+.video-box {
+    width: 100%;
+    background-color: #a5a5a5;
+}
+
+.footer-box {
+    flex-direction: column;
+    a {
+        color: inherit;
+    }
+}
+
+.banner-homepage {
+    //height: 100vh;
+    background-color: #f2f2f2ee;
+    //opacity: 0.5;
+    //background-image: url("http://www.vela.hk/law/html/HKS-consulting/assets/img/banner1.png");
+    //background-image: url("/assets/img/img-banner-index.png");
+    background-image: url("http://www.vela.hk/law/html/vela/assets/img/img-banner-index.png");
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.banner-homepage-content {
+    position: relative;
+    text-shadow: 0.1em 0.1em 0.2em $gray-700;
+    .banner-text {
+        position: absolute;
+        top: 100px;
+    }
+}
+
+.client-box {
+    border: solid 1px $white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0.2em 0.2em 1.2em $gray-500;
+}
+
+.header-banner-box {
+    //height: 600px;
+    //border: 1px solid #f00;
+    position: relative;
+    margin: auto;
+    //line-height: 200px;
+    text-align: center;
+    img {
+        width: 100%;
+        //object-fit: cover;
+    }
+    h2 {
+        //width: 400px;
+        //background: #ccc;
+        //height: 70px;
+        position: absolute;
+        top: 40%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        @media screen and (max-width: 500px) {
+            top: 10%;
+            font-size: 30px;
+        }
+    }
+}
+
+//20210110
+.spc-video {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    visibility: visible;
+    opacity: 0.8;
+    height: 100%;
+    @media screen and (max-width: 500px) {
+        top: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+    //height: 100vh;
+    //object-fit: cover;
+}
+
+//
+.element.style {
+    //background-color: #f2f2f27e;
+    background-color: #f2f2f200;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.p-3 {
+    padding: 1rem !important;
+}
+
+.banner-all {
+    height: 100vh;
+    @media screen and (max-width: 500px) {
+        height: 80vh;
+    }
+}
