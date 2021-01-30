@@ -26,7 +26,7 @@
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
 	color: #fff;
-	background-color: $spc-blue-400;
+	background-color: $spc-blue;
 	border: solid 0.75px $gray-500;
 	border-radius: 50px;
 }
@@ -70,6 +70,17 @@
 	&:hover,:active,:focus {
 		//background-color:$vela-green-600;
 		color: $spc-red-400;
+		text-decoration: none;
+		font-weight: bold;
+	}
+}
+.spc-btn-2 {
+	list-style: none;
+	color: $spc-blue;
+	text-decoration: underline;
+	&:hover,:active,:focus {
+		//background-color:$vela-green-600;
+		color: $spc-blue-400;
 		text-decoration: none;
 		font-weight: bold;
 	}

@@ -51,3 +51,31 @@
 	border-left-width: 10px;
 	border-left-color: $spc-red;
 }
+//event rwd box card
+.section-card-header-2{
+	height: 80px;
+	//width: 100%;
+	//width: 667px;
+	background-color: $spc-blue;
+	z-index: 2;
+	padding: 20px 0px 10px 20px;
+	box-shadow: 0px 3px 6px #00000029;
+	border-left-style: solid;
+	border-left-width: 10px;
+	border-left-color: $spc-red;
+}
+.section-box-2{
+	position: relative;
+	//width: 667px;
+	height: 260px;
+	background-color: $white;
+	box-shadow: 0px 3px 6px #00000029;
+	border-bottom-right-radius: 18px;
+	border-bottom-left-radius: 18px;
+	//opacity: 1;
+	padding: 40px 20px 40px 20px;
+	z-index: 3;
+	&:hover,:active,:focus {
+		box-shadow: 0px 3px 6px #0000009e;
+	}
+}
