@@ -5,10 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SPC</title>
 	<link rel="shortcut icon" type="image/x-icon" href="./assets/icon/spc.ico">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./dist/css/all.min.css">
 
 
 </head>
+<!-- Demo styles -->
+<style>
+	
+	.swiper-container {
+			width: 100%;
+			padding-top: 50px;
+			padding-bottom: 50px;
+	}
+	
+	.swiper-slide {
+			background-position: center;
+			background-size: cover;
+			width: 300px;
+			height: 300px;
+	}
+</style>
 <body>
 	<header class="spc-top">
 		<ul class="container text-h-1-4-1 white">
@@ -41,7 +58,7 @@
 		</ul>
 	</nav> -->
 	<!-- 11 -->
-	    <!-- header -->
+	<!-- header -->
 			<div class="nav_wrapper sticky-top">
         <div class="">
 					<header class="spc-top">
@@ -241,11 +258,26 @@
 			</div>
 		</div>
 	</section>
-	<section class="bg-white d-flex">
+	<section class="bg-white">
 		<div class="container">
 			<h2 class="text-f-8-7-8 spc-blue text-center spc-line">News</h2>
-			<div class="justify-content-center">
-				<div>123</div>
+			<div class=" ">
+				<!-- Swiper -->
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about1.png)"></div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about2.png)"></div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about3.png)"></div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about4.png)"></div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about5.png)"></div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about6.png)"></div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about7.png)"></div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about8.png)"></div>
+									<!-- <div class="swiper-slide" style="background-image:url(http://spc2021.vela.hk/upload_files/banner3/spc-about5.png)"></div> -->
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
+					</div>
 			</div>
 		</div>
 	</section>
@@ -420,61 +452,8 @@
 	<script type="text/javascript" src="./dist/js/popper.min.js "></script>
 	<script type="text/javascript" src="./dist/js/bootstrap.min.js "></script>
 	<script src="./dist/js/jquery.jdSlider-latest.min.js"></script>
+	<!-- Swiper JS -->
+	<script src="./dist/js/swiper-bundle.min.js"></script>
 	<script src="./dist/js/all.js"></script>
-	<script>
-			window.onload = function() {
-					$('.slider1').jdSlider();
-					$('.slider2').jdSlider({
-							wrap: '.slide-inner',
-							isAuto: true,
-							isLoop: true
-					});
-					$('.slider3').jdSlider({
-							wrap: '.slide-inner',
-							slideShow: 2,
-							slideToScroll: 2,
-							isLoop: false,
-							responsive: [{
-									viewSize: 768,
-									settings: {
-											slideShow: 1,
-											slideToScroll: 1
-									}
-							}]
-					});
-					$('.slider3-2').jdSlider({
-							wrap: '.slide-inner',
-							slideShow: 2,
-							slideToScroll: 1,
-							isLoop: true,
-							responsive: [{
-									viewSize: 768,
-									settings: {
-											slideShow: 1
-									}
-							}]
-					});
-					$('.slider3-3').jdSlider({
-							wrap: '.slide-inner',
-							slideShow: 2,
-							slideToScroll: 2,
-							isLoop: true,
-							responsive: [{
-									viewSize: 768,
-									settings: {
-											slideShow: 1,
-											slideToScroll: 1
-									}
-							}]
-					});
-					$('.slider4').jdSlider({
-							wrap: '.slide-inner',
-							isSliding: false,
-							isAuto: true,
-							isLoop: true,
-							isDrag: false
-					});
-			};
-	</script>
 </body>
 </html>
