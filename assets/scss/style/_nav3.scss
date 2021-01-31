@@ -4,6 +4,7 @@
 $content-width: 1200px;
 $breakpoint: 799px;
 $nav-height: 70px;
+//$nav-background: #262626;
 $nav-background: #262626;
 $nav-font-color: #ffffff;
 $link-hover-color: #2581DC;
@@ -11,13 +12,17 @@ $link-hover-color: #2581DC;
 // Outer navigation wrapper
 .navigation {
   height: $nav-height;
-  background: $nav-background;
+  //background: $spc-blue;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.637) 0%, rgba(255, 255, 255, 0.228) 100%);
+  z-index: 999999;
 }
 
 // Logo and branding
 .brand {
   position: absolute;
   padding-left: 20px;
+  //padding-left: 70px;
   float: left;
   line-height: $nav-height;
   text-transform: uppercase;
@@ -50,12 +55,16 @@ nav {
         display: block;
         padding: 0 20px;
         line-height: $nav-height;
-        background: $nav-background;
+        //@at-root: $nav-background;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0)0%);
         color: $nav-font-color;
-        text-decoration: none;
         &:hover {
-          background: $link-hover-color;
+          //background: $link-hover-color;
+          background: $spc-blue-600;
           color: $nav-font-color;
+          //chris add
+          list-style: none;
+          text-decoration: none;
         }
         &:not(:only-child):after {
           padding-left: 4px;
@@ -67,6 +76,7 @@ nav {
         a {
           padding: 15px;
           line-height: 20px;
+          background: $spc-blue;
         }
       }
     }
@@ -88,13 +98,17 @@ nav {
   display: none;
   position: absolute;
   top: 0;
-  //right: 0;
-  left: 0;
-  background: $nav-background;
+  right: 0;
+  //left: 0;
+  //background: $nav-background;
+  background: $spc-blue;
   height: $nav-height;
   width: $nav-height;
 }
 @media only screen and (max-width: 798px) {
+  .navigation {
+    background: $spc-blue;
+  }
   // Hamburger nav visible on mobile only
   .nav-mobile {
     display: block;
@@ -109,9 +123,11 @@ nav {
         a {
           padding: 15px;
           line-height: 20px;
+          background: $spc-blue;
         }
         ul li a {
           padding-left: 30px;
+          background: $spc-blue;
         }
       }
     }

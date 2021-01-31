@@ -49,7 +49,7 @@
 			</li>
 		</ul>
 	</header>
-	<section class="navigation">
+	<section class="navigation fixed-top" id="headerFixed">
 		<div class="nav-container">
 			<div class="brand">
 				<a href="/">
@@ -420,7 +420,22 @@
 			});
 		</script>
 <script>
+	//search
 document.addEventListener("touchstart", function(){}, true);
 </script>
+<script>
+	window.onscroll = function() {headerFixed()};
+	
+	var header = document.getElementById("headerFixed");
+	var sticky = header.offsetTop;
+	
+	function headerFixed() {
+		if (window.pageYOffset > sticky) {
+			header.classList.add("fixed-top");
+		} else {
+			header.classList.remove("fixed-top");
+		}
+	}
+	</script>
 </body>
 </html>

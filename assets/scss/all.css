@@ -11323,7 +11323,10 @@ address, caption, cite, code, dfn, em, var {
 
 .navigation {
   height: 70px;
-  background: #262626;
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.637)), to(rgba(255, 255, 255, 0.228)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.637) 0%, rgba(255, 255, 255, 0.228) 100%);
+  z-index: 999999;
 }
 
 .brand {
@@ -11366,15 +11369,17 @@ nav ul li a:visited {
   display: block;
   padding: 0 20px;
   line-height: 70px;
-  background: #262626;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(0%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 0%);
   color: #ffffff;
-  text-decoration: none;
 }
 
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: #2581DC;
+  background: #18345F;
   color: #ffffff;
+  list-style: none;
+  text-decoration: none;
 }
 
 nav ul li a:not(:only-child):after,
@@ -11390,6 +11395,7 @@ nav ul li ul li {
 nav ul li ul li a {
   padding: 15px;
   line-height: 20px;
+  background: #274778;
 }
 
 .nav-dropdown {
@@ -11405,13 +11411,16 @@ nav ul li ul li a {
   display: none;
   position: absolute;
   top: 0;
-  left: 0;
-  background: #262626;
+  right: 0;
+  background: #274778;
   height: 70px;
   width: 70px;
 }
 
 @media only screen and (max-width: 798px) {
+  .navigation {
+    background: #274778;
+  }
   .nav-mobile {
     display: block;
   }
@@ -11428,9 +11437,11 @@ nav ul li ul li a {
   nav ul li a {
     padding: 15px;
     line-height: 20px;
+    background: #274778;
   }
   nav ul li ul li a {
     padding-left: 30px;
+    background: #274778;
   }
   .nav-dropdown {
     position: static;
