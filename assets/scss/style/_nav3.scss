@@ -1,7 +1,7 @@
 //https://codepen.io/taniarascia/pen/dYvvYv?editors=1100
 //Responsive Dropdown Navigation Bar
 // Navigation Variables
-$content-width: 1000px;
+$content-width: 1200px;
 $breakpoint: 799px;
 $nav-height: 70px;
 $nav-background: #262626;
@@ -88,7 +88,8 @@ nav {
   display: none;
   position: absolute;
   top: 0;
-  right: 0;
+  //right: 0;
+  left: 0;
   background: $nav-background;
   height: $nav-height;
   width: $nav-height;

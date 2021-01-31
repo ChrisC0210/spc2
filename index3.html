@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SPC</title>
 	<link rel="shortcut icon" type="image/x-icon" href="./assets/icon/spc.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./dist/css/all.min.css">
 
@@ -27,11 +28,33 @@
 	}
 </style>
 <body>
-	
+	<!-- header -->
+	<header class="spc-top">
+		<ul class="container text-h-1-4-1 white">
+			<li><a href="#">School Intranet</a></li>
+			<li><a href="#">Learning Hub</a></li>
+			<li><a href="#">OLE</a></li>
+			<li><a href="#">SPC Academy</a></li>
+			<li><a href="#">Sports Record System</a></li>
+			<li><a href="#">Library</a></li>
+			<li><a href="#">Sitemap</a></li>
+			<li class="nav-right">
+				<form class="search-container" action="//llamaswill.tumblr.com/search">
+					<input id="search-box" type="text" class="search-box" name="q" />
+					<label for="search-box"><span class="search-icon">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</span></label>
+					<input type="submit" id="search-submit" />
+				</form>
+			</li>
+		</ul>
+	</header>
 	<section class="navigation">
 		<div class="nav-container">
 			<div class="brand">
-				<a href="#!">Logo</a>
+				<a href="/">
+					<img class="spc-logo" src="./assets/img/spc-logo.png" alt="spc-logo">
+				</a>
 			</div>
 			<nav>
 				<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
@@ -80,8 +103,6 @@
 			</nav>
 		</div>
 	</section>
-	<!-- header -->
-
     <!-- header --> 
 	<section class="jd-slider slider2">
 		<!-- <h2>Infinite Loop</h2> -->
@@ -398,5 +419,8 @@
 				}
 			});
 		</script>
+<script>
+document.addEventListener("touchstart", function(){}, true);
+</script>
 </body>
 </html>
