@@ -125,8 +125,8 @@
 	</section>
 	<section class="bg-blue d-flex">
 		<div class="container">
-			<div class="col-6" style="z-index:22;">
-				<h2 class="text-f-5-max white" style="z-index:22;">Overview</h2>
+			<div class="col-lg-6 col-sm-12" style="z-index:22;">
+				<h2 class="text-f-5-max white mb-4 text-sm-center" style="z-index:22;">Overview</h2>
 				<div class="justify-content-between">
 					<div class="section-box text-h-2-4-2">
 						<p class="gray-900">
@@ -137,7 +137,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-lg-4 col-md-12 col-sm-12">
 				<div>
 					<img class="section-img" src="./assets/img/bg-content-1.png" alt="">
 				</div>
@@ -167,14 +167,14 @@
 			</div>
 		</div>
 	</section>
-	<section class="bg-blue">
-		<div class="container d-flex col-12">
-			<div class="col-4">
-				<div>
+	<section class="bg-blue-2">
+		<div class="container">
+			<div>
+				<div class="col-lg-4 col-md-12 col-sm-12">
 					<img class="section-img-2" src="./assets/img/bg-content-2.png" alt="">
 				</div>
 			</div>
-			<div class="col-6" style="z-index:22;">
+			<div class="col-lg-8 col-md-12 col-sm-12" style="z-index:22;">
 				<h2 class="text-f-5-max white">Events</h2>
 				<div class=" ">
 					<h2 class="text-f-3-5-3 white section-card-header">04-NOVEMBER-2020</h2>
@@ -196,12 +196,12 @@
 			</div>
 		</div>
 	</section>
-	<section class="bg-white">
+	<section class="bg-white-2">
 		<div class="container">
 			<h2 class="text-f-8-7-8 spc-blue text-center spc-line mb-4">Principal’s Message</h2>
 			<div class="d-flex justify-content-center">
-				<div>
-					<img src="./assets/img/img-principal.png" alt="">
+				<div class=" ">
+					<img class="col-12" src="./assets/img/img-principal.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -217,10 +217,11 @@
 					</li>
 				</ul>
 
-			<div class=" justify-content-center tab-content" id="pills-tabContent">
-				<div class="tab-pane fade show active d-flex" id="pills-events" role="tabpanel" aria-labelledby="pills-events-tab">
+			<div class="justify-content-center tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active " id="pills-events" role="tabpanel" aria-labelledby="pills-events-tab">
+					<div class="d-flex row">
 					<!-- 1 -->
-					<div class="col col-4 mb-2" style="z-index:22;">
+					<div class="col-lg-4 col-sm-12 mb-4" style="z-index:22;">
 						<div class=" ">
 							<h2 class="text-f-3-5-3 white section-card-header-2">04-NOVEMBER-2020</h2>
 							<div class="section-box-2 text-h-2-4-2">
@@ -240,7 +241,7 @@
 						</div>
 					</div>
 					<!-- 2 -->
-					<div class="col col-4 mb-2" style="z-index:22;">
+					<div class="col-lg-4 col-sm-12 mb-4" style="z-index:22;">
 						<div class=" ">
 							<h2 class="text-f-3-5-3 white section-card-header-2">04-NOVEMBER-2020</h2>
 							<div class="section-box-2 text-h-2-4-2">
@@ -260,7 +261,7 @@
 						</div>
 					</div>
 					<!-- 3 -->
-					<div class="col col-4 mb-2" style="z-index:22;">
+					<div class="col-lg-4 col-sm-12 mb-4" style="z-index:22;">
 						<div class=" ">
 							<h2 class="text-f-3-5-3 white section-card-header-2">04-NOVEMBER-2020</h2>
 							<div class="section-box-2 text-h-2-4-2">
@@ -279,8 +280,14 @@
 							</div>
 						</div>
 					</div>
+					</div>
+
 				</div>
-				<div class="tab-pane fade" id="pills-notices" role="tabpanel" aria-labelledby="pills-notices-tab">...</div>
+				<!-- 123 -->
+				<div class="tab-pane fade" id="pills-notices" role="tabpanel" aria-labelledby="pills-notices-tab">
+
+				</div>
+				<!-- 123 -->
 			</div>
 		</div>
 	</section>
@@ -366,5 +373,30 @@
 		}); // end DOM ready
 	})(jQuery); // end jQuery
 	</script>
+	  <script>
+			var swiper2 = new Swiper('.swiper-container2', {
+				slidesPerView: 1,
+				spaceBetween: 10,
+				// init: false,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: false,
+				},
+				breakpoints: {
+					640: {
+						slidesPerView: 1,
+						spaceBetween: 20,
+					},
+					768: {
+						slidesPerView: 2,
+						spaceBetween: 20,
+					},
+					1024: {
+						slidesPerView: 3,
+						spaceBetween: 20,
+					},
+				}
+			});
+		</script>
 </body>
 </html>
