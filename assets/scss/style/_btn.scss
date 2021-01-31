@@ -85,6 +85,21 @@
 		font-weight: bold;
 	}
 }
+.spc-btn-3 {
+	list-style: none;
+	color: $spc-red;
+	background-color: $white;
+	border: solid 2px;
+	border-radius: 4px;
+	padding: 16px 34px;
+	//text-decoration: underline;
+	&:hover,:active,:focus {
+		//background-color:$vela-green-600;
+		text-decoration: none;
+		background-color: $spc-red;
+		color: $white;
+	}
+}
 //spc line
 .spc-line{
 	text-decoration: underline;
