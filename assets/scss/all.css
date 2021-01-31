@@ -11912,11 +11912,19 @@ article {
   z-index: 3;
 }
 
+.section-box-3:hover {
+  background-color: #f8f9fa;
+}
+
 .section-card-header-3 {
   width: 70px;
   background-color: #274778;
   z-index: 2;
   padding: 10px 10px;
+}
+
+.notices-box a {
+  text-decoration: none;
 }
 
 .footer-link a {
