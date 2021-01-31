@@ -11902,11 +11902,6 @@ article {
   z-index: 3;
 }
 
-.section-box-2:hover, .section-box-2 :active, .section-box-2 :focus {
-  -webkit-box-shadow: 0px 3px 6px #0000009e;
-          box-shadow: 0px 3px 6px #0000009e;
-}
-
 .footer-link a {
   color: #fefefe;
 }
