@@ -27,6 +27,9 @@
 		right: 40px;
 		top: -14px;
 	}
+	@media screen and (max-width: 800px) {
+		display: none;
+	}
 
 }
 .spc-nav{

@@ -3,7 +3,7 @@
 // Navigation Variables
 $content-width: 1200px;
 $breakpoint: 799px;
-$nav-height: 70px;
+$nav-height: 80px;
 //$nav-background: #262626;
 $nav-background: #262626;
 $nav-font-color: #ffffff;
@@ -53,7 +53,8 @@ nav {
       a,
       a:visited {
         display: block;
-        padding: 0 20px;
+        padding: 0 4px;
+        //margin-left: 20px;
         line-height: $nav-height;
         //@at-root: $nav-background;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0)0%);
@@ -68,11 +69,12 @@ nav {
         }
         &:not(:only-child):after {
           padding-left: 4px;
-          content: ' ▾';
+          //content: ' ▾';
+          content: ' ';
         }
       } // Dropdown list
       ul li {
-        min-width: 190px;
+        min-width: 180px;
         a {
           padding: 15px;
           line-height: 20px;
