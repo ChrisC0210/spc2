@@ -26,6 +26,11 @@
 			width: 300px;
 			height: 300px;
 	}
+	.swiper-slide .title {
+      position: absolute;
+			bottom: -30px;
+			text-align: center;
+    }
 </style>
 <body>
 	<!-- header -->
@@ -217,22 +222,23 @@
 		<div class="slide-inner">
 				<ul class="slide-area">
 						<li>
-								<a href="#">
-									<img src="./assets/img/IMG_1335.JPG" alt="">
-								</a>
+							<video autoplay="true" loop="" muted="" >
+								<source src="./assets/img/spc-video-1.mp4" type="video/mp4">
+							</video>
 						</li>
 						<li>
 								<a href="#">
-										<video autoplay="true" loop="" muted="" style="">
-											<source src="./assets/img/Untitled-2.mp4" type="video/mp4">
+										<video autoplay="true" loop="" muted="" >
+											<source src="./assets/img/spc-video-1.mp4" type="video/mp4">
 										</video>
 								</a>
 						</li>
 						<li>
-								<a href="#">3</a>
-						</li>
-						<li>
-								<a href="#">4</a>
+								<a href="#">
+									<video autoplay="true" loop="" muted="" >
+										<source src="./assets/img/spc-video-1.mp4" type="video/mp4">
+									</video>
+								</a>
 						</li>
 				</ul>
 				<a class="prev" href="#">
@@ -278,20 +284,51 @@
 			<h2 class="text-f-8-7-8 spc-blue text-center spc-line">News</h2>
 			<div class=" ">
 				<!-- Swiper -->
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about1.png)"></div>
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about2.png)"></div>
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about3.png)"></div>
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about4.png)"></div>
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about5.png)"></div>
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about6.png)"></div>
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about7.png)"></div>
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about8.png)"></div>
+						<div class="swiper-container mb-4">
+							<div class="swiper-wrapper mb-4">
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about1.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											F.1 Admissions Online Application
+										</div>
+									</div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about2.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											Our Facebook
+										</div>
+									</div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about3.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											Students' Association
+										</div>
+									</div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about4.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											Principal's Message
+										</div>
+									</div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about5.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											MUSIC DEPARTMENT
+										</div>
+									</div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about6.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											Careers and Life Planning Team
+										</div>
+									</div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about7.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											SPC Sports
+										</div>
+									</div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about8.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											SPC ACADEMY
+										</div></div>
 									<!-- <div class="swiper-slide" style="background-image:url(http://spc2021.vela.hk/upload_files/banner3/spc-about5.png)"></div> -->
 							</div>
 							<!-- Add Pagination -->
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination mt-4"></div>
 					</div>
 			</div>
 		</div>
@@ -412,11 +449,110 @@
 					</div>
 
 				</div>
-				<!-- 123 -->
+				<!-- Notices -->
 				<div class="tab-pane fade" id="pills-notices" role="tabpanel" aria-labelledby="pills-notices-tab">
-
+					<div class="container notices-box">
+						<!-- <h2 class="text-f-8-7-8 spc-blue text-left spc-line">Events</h2> -->
+						<a href="./notices-list-details.html" class="justify-content-center mb-2">
+							<div class=" ">
+								<div class="d-flex row">
+								<!-- 1 -->
+								<div class="col-lg-12 col-sm-12 mb-4" style="z-index:22;">
+			
+										<div class="d-flex section-box-3 text-h-2-4-2">
+			
+										<div class="col-lg-1 col-sm-2  mr-lg-4">
+											<h2 class="text-h-6-4-6 white section-card-header-3 text-center">23</h2>
+										</div>
+			
+										<div class="col-10">
+											<h4 class="text-f-2-4-2 spc-blue">
+												23-NOVEMBER-2020
+											</h4>
+											<div class="mb-4"> </div>
+											<p class="text-h-1-4-1 gray-800">
+												Winter School Uniform
+											</p>
+										</div>
+			
+									</div>
+			
+								</div>
+								<!-- 1 -->
+								</div>
+			
+							</div>
+			
+						</a>
+						<!-- - -->
+						<a href="./notices-list-details.html" class="justify-content-center mb-2">
+							<div class=" ">
+								<div class="d-flex row">
+								<!-- 1 -->
+								<div class="col-lg-12 col-sm-12 mb-4" style="z-index:22;">
+			
+										<div class="d-flex section-box-3 text-h-2-4-2">
+			
+										<div class="col-lg-1 col-sm-2  mr-lg-4">
+											<h2 class="text-h-6-4-6 white section-card-header-3 text-center">23</h2>
+										</div>
+			
+										<div class="col-10">
+											<h4 class="text-f-2-4-2 spc-blue">
+												23-NOVEMBER-2020
+											</h4>
+											<div class="mb-4"> </div>
+											<p class="text-h-1-4-1 gray-800">
+												Winter School Uniform Guidelines
+											</p>
+										</div>
+			
+									</div>
+			
+								</div>
+								<!-- 1 -->
+								</div>
+			
+							</div>
+			
+						</a>
+						<!-- - -->
+						<a href="./notices-list-details.html" class="justify-content-center mb-2">
+							<div class=" ">
+								<div class="d-flex row">
+								<!-- 1 -->
+								<div class="col-lg-12 col-sm-12 mb-4" style="z-index:22;">
+			
+										<div class="d-flex section-box-3 text-h-2-4-2">
+			
+										<div class="col-lg-1 col-sm-2  mr-lg-4">
+											<h2 class="text-h-6-4-6 white section-card-header-3 text-center">07</h2>
+										</div>
+			
+										<div class="col-10">
+											<h4 class="text-f-2-4-2 spc-blue">
+												07-NOVEMBER-2020
+											</h4>
+											<div class="mb-4"> </div>
+											<p class="text-h-1-4-1 gray-800">
+												Form One (2021-2022) Admissions Application
+											</p>
+										</div>
+			
+									</div>
+			
+								</div>
+								<!-- 1 -->
+								</div>
+			
+							</div>
+			
+						</a>
+						<!-- - -->
+			
+					</div>
 				</div>
-				<!-- 123 -->
+				<!-- Notices -->
 			</div>
 		</div>
 	</section>
