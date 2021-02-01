@@ -16,6 +16,7 @@
 @import "../scss/style/navList";
 @import "../scss/style/section";
 @import "../scss/style/footer";
+@import "../scss/style/swiperSpc";
 //@import "../scss/style/slick";
 //element
 //@import "../scss/elment/parallax";
@@ -29,9 +30,3 @@
         color: $spc-blue;
     }
 }
-.swiper-slide{
-	border: solid 2px $gray-400;
-		&:hover,:active,:focus {
-			border: solid 2px $spc-blue;
-		}
-	}

@@ -12009,6 +12009,38 @@ footer {
   margin-top: 0px;
 }
 
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide .title {
+  position: absolute;
+  bottom: -50px;
+}
+
+.swiper-slide {
+  border: solid 2px #D6D6D6;
+}
+
+.swiper-slide:hover, .swiper-slide :active, .swiper-slide :focus {
+  border: solid 2px #274778;
+}
+
+.swiper-content {
+  padding: 4px;
+  background-color: #274778;
+  color: #fefefe;
+}
+
 .search-box {
   -webkit-transition: width 0.6s, border-radius 0.6s, background 0.6s, -webkit-box-shadow 0.6s;
   transition: width 0.6s, border-radius 0.6s, background 0.6s, -webkit-box-shadow 0.6s;
@@ -12101,13 +12133,5 @@ footer {
 
 .breadcrumb a {
   color: #274778;
-}
-
-.swiper-slide {
-  border: solid 2px #D6D6D6;
-}
-
-.swiper-slide:hover, .swiper-slide :active, .swiper-slide :focus {
-  border: solid 2px #274778;
 }
 /*# sourceMappingURL=all.css.map */
