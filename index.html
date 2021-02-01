@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SPC</title>
 	<link rel="shortcut icon" type="image/x-icon" href="./assets/icon/spc.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./dist/css/all.min.css">
 
@@ -25,8 +26,32 @@
 			width: 300px;
 			height: 300px;
 	}
+	.swiper-slide .title {
+      position: absolute;
+			bottom: -30px;
+			text-align: center;
+		}
+		.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
 </style>
 <body>
+	<!-- header -->
 	<header class="spc-top">
 		<ul class="container text-h-1-4-1 white">
 			<li><a href="#">School Intranet</a></li>
@@ -36,188 +61,217 @@
 			<li><a href="#">Sports Record System</a></li>
 			<li><a href="#">Library</a></li>
 			<li><a href="#">Sitemap</a></li>
-			<li class="nav-right"><a href="#">Search</a></li>
+			<li class="nav-right">
+				<form class="search-container" action="//llamaswill.tumblr.com/search">
+					<input id="search-box" type="text" class="search-box" name="q" />
+					<label for="search-box"><span class="search-icon">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</span></label>
+					<input type="submit" id="search-submit" />
+				</form>
+			</li>
 		</ul>
 	</header>
-	<!-- <nav class="spc-nav text-h-1-4-1 white">
-		<ul class="container justify-content-between">
-			<li>
+	<section class="navigation text-h-1-4-1" id="headerFixed" style="position: fixed;  width: -webkit-fill-available;">
+		<div class="nav-container">
+			<div class="brand">
 				<a href="/">
-					<img src="./assets/img/spc-logo.png" alt="spc-logo">
+					<img class="spc-logo" src="./assets/img/spc-logo.png" alt="spc-logo">
 				</a>
-			</li>
-			<li><a href="#">About us</a></li>
-			<li><a href="#">Admissions</a></li>
-			<li><a href="#">Staff</a></li>
-			<li><a href="#">Curriculum</a></li>
-			<li><a href="#">Co-curriculum</a></li>
-			<li><a href="#">Global Classroom</a></li>
-			<li><a href="#">Students</a></li>
-			<li><a href="#">SPC Family</a></li>
-			<li><a href="#" class="spc-red">Contact Us</a></li>
-		</ul>
-	</nav> -->
-	<!-- 11 -->
-	<!-- header -->
-			<div class="nav_wrapper sticky-top">
-        <div class="">
-					<header class="spc-top">
-						<ul class="container text-h-1-4-1 white">
-							<li><a href="#">School Intranet</a></li>
-							<li><a href="#">Learning Hub</a></li>
-							<li><a href="#">OLE</a></li>
-							<li><a href="#">SPC Academy</a></li>
-							<li><a href="#">Sports Record System</a></li>
-							<li><a href="#">Library</a></li>
-							<li><a href="#">Sitemap</a></li>
-							<li class="nav-right" style="margin-top: -10px;">
-								<a href="#search_box" class="btn" id="search">&#9740;</a>
+			</div>
+			<nav>
+				<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+				<ul class="nav-list">
+					<li>
+						<a href="#!">About us</a>
+						<ul class="nav-dropdown">
+							<li>
+								<a href="http://spc2021.vela.hk/principal_message.php?mid=1-16">Principal Message</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=7&mid=1-21">College Council</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=51&mid=1-101">SPC at a glance</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=59&mid=1-17">Motto, Mission and Goals</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=4&mid=1-18">College Badge</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=5&mid=1-19">College Hymn/ Song</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=166&mid=1-15">College History</a>
+							</li>
+							<li>
+								<a href="http://archives.spc.edu.hk/main2.php" target="_blank">College Archives</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=65&mid=1-154">Plans and Reports</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=121&mid=1-174">College Facilities</a>
+							</li>
+							<li>
+								<a href="/upload_files/editor_image/school_calendar_2020-2021.pdf" target="_blank">School Calendar</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=164&mid=1-211">News from St. Paul's</a>
 							</li>
 						</ul>
-					</header>
-        </div>
-
-        <!--<a class="menu-link" href="#menu"></a>-->
-        <div class=" ">
-            <div class="spinner-master">
-                <input type="checkbox" id="spinner-form" />
-                <label for="spinner-form" class="spinner-spin">
-						<div class="spinner diagonal part-1"></div>
-						<div class="spinner horizontal"></div>
-						<div class="spinner diagonal part-2"></div>
-					</label>
-            </div>
-            <!-- <a href="#search_box" class="btn" id="search">&#9740;</a> -->
-            <nav id="menu" class="menu">
-							<a href="/">
-								<img class="spc-logo" src="./assets/img/spc-logo.png" alt="spc-logo">
-							</a>
-                <ul class="dropdown">
-                    <li><a href="#Link" title="Link">About us</a>
-                        <ul>
-                            <li><a href="http://spc2021.vela.hk/principal_message.php?mid=1-16">Principal's Message</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=7&mid=1-21">College Council</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=51&mid=1-101">SPC at a glance</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=59&mid=1-17">Motto, Mission and Goals</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=4&mid=1-18">College Badge</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=5&mid=1-19">College Hymn/ Song</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=166&mid=1-15">College History</a></li>
-                            <li><a href="http://archives.spc.edu.hk/main2.php" target="_blank">College Archives</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=65&mid=1-154">Plans and Reports</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=121&mid=1-174">College Facilities</a></li>
-                            <li><a href="http://spc2021.vela.hk/upload_files/editor_image/school_calendar_2020-2021.pdf">School Calendar</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=164&mid=1-211">News from St. Paul's</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#Link" title="Link">Admissions</a>
-                        <ul>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=156&mid=70-103">Form 1 Admissions 中一入學申請</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=151&mid=70-130">Forms 2 and 3 Admissions 中二及中三入學申請</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=131&mid=70-108">School Fees 學費</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=168&mid=70-105">Fee Remission Scheme</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=169&mid=70-215">學費減免計劃</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=128&mid=70-106">Scholarships 獎學金</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=87&mid=70-128">Download Page 下載</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=165&mid=70-213">Publications</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=172&mid=70-221">Student Welfare</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#Link" title="Link">Staff</a>
-                        <ul>
-                            <li><a href="http://spc2021.vela.hk/all_teacher.php?mid=3-26">All Teachers</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=115&mid=3-170">Employment Opportunities</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#Link" title="Link">Curriculum</a>
-                        <ul>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=48&mid=4-165">Junior Secondary (Forms 1-3)</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=49&mid=4-166">Senior Secondary (Forms 4-6)</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=152&mid=4-203">IAL</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=35&mid=4-39">Departments</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=159&mid=4-209">Learning Hub</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=109&mid=4-140">Academic Results</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=113&mid=4-167-168">Other Programmes</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#Link" title="Link">Co-curriculum</a>
-                        <ul>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=39&mid=72-79">Overview</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=174&mid=72-141">Morning Assembly</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=71&mid=72-80">Music</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=44&mid=72-81">Sports</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=145&mid=72-197">ALPS Programmes</a></li>
-                            <li><a href="https://sites.google.com/stpauls.edu.hk/spcsi/">SPC Academy</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=146&mid=72-198">Activity Week</a></li>
-                            <li><a href="https://olespc.shutterfly.com/" target="_blank">Other Learning Experiences</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=23&mid=72-88">Gifted Education</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#Link" title="Link">Global Classroom</a>
-                        <ul>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=17&mid=6-46">Tours</a></li>
-                            <li><a href="http://spc2021.vela.hk/tour_archive.php?mid=6-47">Archive</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=40&mid=6-30">Teacher Visits</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=24&mid=6-48">Linked Schools</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=80&mid=6-123">Assembly Presentations</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#Link" title="Link">Students</a>
-                        <ul>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=120&mid=8-86">Student Support</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=25&mid=8-55">The Students' Association</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=28&mid=8-56">Prefects' Council</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=31&mid=8-57">House System</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=137&mid=8-124">Careers and Life Planning</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=47&mid=8-208">University Honours</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=82&mid=8-126">Destinations of our graduates</a></li>
-                            <li><a href="http://spc2021.vela.hk/content.php?id=172&mid=8-220">Student Welfare</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#Link" title="Link">SPC Family</a>
-                        <ul>
-                            <li><a href="https://www.spc-ps.edu.hk/" target="_blank">Primary School</a></li>
-                            <li><a href="http://www.spc.edu.hk/pta/" target="_blank">Parent-Teacher Association</a></li>
-                            <li><a href="http://www.alumni.org.hk/" target="_blank">St. Paul's College Alumni Association</a></li>
-                            <li><a href="http://www.spcalumni.com/" target="_blank">St. Paul's College Alumni Association (Ontario)</a></li>
-                            <li><a href="https://www.spc-foundation.org.hk/" target="_blank">Foundation</a></li>
-                            <li><a href="https://www.facebook.com/10th-Hong-Kong-Group-162053538538/" target="_blank">Scout Association of HK 10th
-															Hong Kong Group</a></li>
-                            <li><a href="phttps://www.spc-connect.net/" target="_blank">Membership in the SPC Community</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <form class="search_box" id="search_box" action="/search/">
-                <input name="search_criteria" placeholder="Search here" value="" type="text">
-                <input class="search_icon" value="Search" type="submit">
-            </form>
-        </div>
-
-
-    </div>
+					</li>
+					<li>
+						<a href="#!">Admissions</a>
+						<ul class="nav-dropdown">
+							<li>
+								<a href="content.php?id=156&amp;mid=70-103" class="">Form 1 Admissions 中一入學申請</a>
+							</li>
+							<li>
+								<a href="content.php?id=151&amp;mid=70-130" class="">Forms 2 and 3 Admissions 中二及中三入學申請</a>
+							</li>
+							<li>
+								<a href="content.php?id=131&amp;mid=70-108" class="">School Fees 學費</a>
+							</li>
+							<li>
+								<a href="content.php?id=168&amp;mid=70-105" class="">Fee Remission Scheme</a>
+							</li>
+							<li>
+								<a href="content.php?id=169&amp;mid=70-215" class="">學費減免計劃</a>
+							</li>
+							<li>
+								<a href="content.php?id=128&amp;mid=70-106" class="">Scholarships 獎學金</a>
+							</li>
+							<li>
+								<a href="content.php?id=87&amp;mid=70-128" class="">Download  Page 下載</a>
+							</li>
+							<li>
+								<a href="content.php?id=165&amp;mid=70-213" class="">Publications</a>
+							</li>
+							<li>
+								<a href="content.php?id=172&amp;mid=70-221" class="">Student Welfare</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#!">Staff </a>
+						<ul class="nav-dropdown">
+							<li>
+								<a href="all_teacher.php?mid=3-26" class="">All Teachers</a>
+							</li>
+							<li>
+								<a href="content.php?id=115&amp;mid=3-170" class="">Employment Opportunities</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#!">Curriculum</a>
+						<ul class="nav-dropdown">
+							<li><a href="content.php?id=48&amp;mid=4-165" class="">Junior Secondary (Forms 1-3)</a></li>
+							<li><a href="content.php?id=49&amp;mid=4-166" class="">Senior Secondary (Forms 4-6)</a></li>
+							<li><a href="content.php?id=152&amp;mid=4-203" class="">IAL</a></li>
+							<li><a href="content.php?id=35&amp;mid=4-39" class="">Departments</a></li>
+							<li><a href="content.php?id=159&amp;mid=4-209" class="">Learning Hub</a></li>
+							<li><a href="content.php?id=109&amp;mid=4-140" class="">Academic Results</a></li>
+							<li><a href="content.php?id=113&amp;mid=4-167-168" class="">Other Programmes</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#!">Co-curriculum</a>
+						<ul class="nav-dropdown">
+							<li><a href="content.php?id=39&amp;mid=72-79" class="">Overview</a></li>
+							<li><a href="content.php?id=174&amp;mid=72-141" class="">Morning Assembly</a></li>
+							<li><a href="content.php?id=71&amp;mid=72-80" class="">Music</a></li>
+							<li><a href="content.php?id=44&amp;mid=72-81" class="">Sports</a></li>
+							<li><a href="content.php?id=145&amp;mid=72-197" class="">ALPS Programmes</a></li>
+							<li><a href="https://sites.google.com/stpauls.edu.hk/spcsi/" class="">SPC Academy</a></li>
+							<li><a href="content.php?id=146&amp;mid=72-198" class="">Activity Week</a></li>
+							<li><a href="http://olespc.shutterfly.com/" target="_blank" class="">Other Learning Experiences</a></li>
+							<li><a href="content.php?id=23&amp;mid=72-88" class="">Gifted Education</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#!">Global Classroom </a>
+						<ul class="nav-dropdown">
+							<li><a href="content.php?id=17&amp;mid=6-46" class="">Tours</a></li>
+							<li><a href="tour_archive.php?mid=6-47" class="">Archive</a></li>
+							<li><a href="content.php?id=40&amp;mid=6-30" class="">Teacher Visits</a></li>
+							<li><a href="content.php?id=24&amp;mid=6-48" class="">Linked Schools</a></li>
+							<li><a href="content.php?id=80&amp;mid=6-123" class="">Assembly Presentations</a></li>
+							</ul>
+					</li>
+					<li>
+						<a href="#!">Students</a>
+						<ul class="nav-dropdown">
+							<li><a href="content.php?id=120&amp;mid=8-86" class="">Student Support</a></li>
+							<li><a href="content.php?id=25&amp;mid=8-55" class="">The Students' Association</a></li>
+							<li><a href="content.php?id=28&amp;mid=8-56" class="">Prefects' Council</a></li>
+							<li><a href="content.php?id=31&amp;mid=8-57" class="">House System</a></li>
+							<li><a href="content.php?id=137&amp;mid=8-124" class="">Careers and Life Planning</a></li>
+							<li><a href="content.php?id=47&amp;mid=8-208" class="">University Honours</a></li>
+							<li><a href="content.php?id=82&amp;mid=8-126" class="">Destinations of our graduates</a></li>
+							<li><a href="content.php?id=172&amp;mid=8-220" class="">Student Welfare</a></li>
+							</ul>
+					</li>
+					<li>
+						<a href="#!">SPC Family</a>
+						<ul class="nav-dropdown">
+							<li><a href="http://www.spc-ps.edu.hk/" target="_blank" class="">Primary School</a></li>
+							<li><a href="http://www.spc.edu.hk/pta/" target="_blank" class="">Parent-Teacher Association</a></li>
+							<li><a href="http://www.alumni.org.hk/" target="_blank" class="">St. Paul's College Alumni Association</a></li>
+							<li><a href="http://www.spcalumni.com/" target="_blank" class="">St. Paul's College Alumni Association (Ontario)</a></li>
+							<li><a href="http://www.spc-foundation.org.hk" target="_blank" class="">Foundation</a></li>
+							<li><a href="https://www.facebook.com/10th-Hong-Kong-Group-162053538538/" target="_blank" class="">Scout Association of HK 10th Hong Kong Group</a></li>
+							<li><a href="https://www.spc-connect.net/" target="_blank" class="">Membership in the SPC Community</a></li>
+							</ul>
+					</li>
+					<li>
+						<a href="#!">Contact Us</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
     <!-- header --> 
-	<!-- 11 -->
 	<section class="jd-slider slider2">
 		<!-- <h2>Infinite Loop</h2> -->
+		<!-- link -->
+		<li id="navicon text-h-1-4-1">
+      <a href="" class="nav text-h-1-4-1">
+			<button class="popup btn-link text-h-1-4-1">Link</button>
+
+      </a>
+    </li>  
+    <ul class="side-categories text-h-1-4-1" style="display:none">
+			<li><a href="#">Our Facebook</a></li>
+			<li><a href="#">Music Department</a></li>
+			<li><a href="#">PE Department’s Facebook</a></li>
+			<li><a href="#">SPC Academy</a></li>
+		</ul>
+
+		<!-- link -->
 		<div class="slide-inner">
 				<ul class="slide-area">
 						<li>
-								<a href="#">
-									<img src="./assets/img/IMG_1335.JPG" alt="">
-								</a>
+							<video autoplay="true" loop="" muted="" >
+								<source src="./assets/img/spc-video-1.mp4" type="video/mp4">
+							</video>
 						</li>
 						<li>
 								<a href="#">
-										<video autoplay="true" loop="" muted="" style="">
-											<source src="./assets/img/Untitled-2.mp4" type="video/mp4">
+										<video autoplay="true" loop="" muted="" >
+											<source src="./assets/img/spc-video-2.mp4" type="video/mp4">
 										</video>
 								</a>
 						</li>
 						<li>
-								<a href="#">3</a>
-						</li>
-						<li>
-								<a href="#">4</a>
+								<a href="#">
+									<video autoplay="true" loop="" muted="" >
+										<source src="./assets/img/spc-video-3.mp4" type="video/mp4">
+									</video>
+								</a>
 						</li>
 				</ul>
 				<a class="prev" href="#">
@@ -239,8 +293,8 @@
 	</section>
 	<section class="bg-blue d-flex">
 		<div class="container">
-			<div class="col-6" style="z-index:22;">
-				<h2 class="text-f-5-max white" style="z-index:22;">Overview</h2>
+			<div class="col-lg-6 col-sm-12" style="z-index:22;">
+				<h2 class="text-f-5-max white mb-4 text-sm-center" style="z-index:22;">Overview</h2>
 				<div class="justify-content-between">
 					<div class="section-box text-h-2-4-2">
 						<p class="gray-900">
@@ -251,7 +305,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-lg-4 col-md-12 col-sm-12">
 				<div>
 					<img class="section-img" src="./assets/img/bg-content-1.png" alt="">
 				</div>
@@ -263,32 +317,63 @@
 			<h2 class="text-f-8-7-8 spc-blue text-center spc-line">News</h2>
 			<div class=" ">
 				<!-- Swiper -->
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about1.png)"></div>
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about2.png)"></div>
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about3.png)"></div>
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about4.png)"></div>
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about5.png)"></div>
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about6.png)"></div>
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about7.png)"></div>
-									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about8.png)"></div>
+						<div class="swiper-container mb-4">
+							<div class="swiper-wrapper mb-4">
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about1.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											F.1 Admissions Online Application
+										</div>
+									</div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about2.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											Our Facebook
+										</div>
+									</div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about3.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											Students' Association
+										</div>
+									</div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about4.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											Principal's Message
+										</div>
+									</div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about5.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											MUSIC DEPARTMENT
+										</div>
+									</div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about6.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											Careers and Life Planning Team
+										</div>
+									</div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about7.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											SPC Sports
+										</div>
+									</div>
+									<div class="swiper-slide" style="background-image:url(./assets/img/spc-about8.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											SPC ACADEMY
+										</div></div>
 									<!-- <div class="swiper-slide" style="background-image:url(http://spc2021.vela.hk/upload_files/banner3/spc-about5.png)"></div> -->
 							</div>
 							<!-- Add Pagination -->
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination mt-4"></div>
 					</div>
 			</div>
 		</div>
 	</section>
-	<section class="bg-blue">
-		<div class="container d-flex col-12">
-			<div class="col-4">
-				<div>
+	<section class="bg-blue-2">
+		<div class="container d-lg-flex">
+			<div class="col-lg-4 col-md-12 col-sm-12">
+				<div >
 					<img class="section-img-2" src="./assets/img/bg-content-2.png" alt="">
 				</div>
 			</div>
-			<div class="col-6" style="z-index:22;">
+			<div class="col-lg-8 col-md-12 col-sm-12" style="z-index:22;">
 				<h2 class="text-f-5-max white">Events</h2>
 				<div class=" ">
 					<h2 class="text-f-3-5-3 white section-card-header">04-NOVEMBER-2020</h2>
@@ -310,12 +395,12 @@
 			</div>
 		</div>
 	</section>
-	<section class="bg-white">
+	<section class="bg-white-2">
 		<div class="container">
 			<h2 class="text-f-8-7-8 spc-blue text-center spc-line mb-4">Principal’s Message</h2>
 			<div class="d-flex justify-content-center">
-				<div>
-					<img src="./assets/img/img-principal.png" alt="">
+				<div class="">
+					<img class="col-12" src="./assets/img/img-principal.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -331,10 +416,11 @@
 					</li>
 				</ul>
 
-			<div class=" justify-content-center tab-content" id="pills-tabContent">
-				<div class="tab-pane fade show active d-flex" id="pills-events" role="tabpanel" aria-labelledby="pills-events-tab">
+			<div class="justify-content-center tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active " id="pills-events" role="tabpanel" aria-labelledby="pills-events-tab">
+					<div class="d-flex row">
 					<!-- 1 -->
-					<div class="col col-4 mb-2" style="z-index:22;">
+					<div class="col-lg-4 col-sm-12 mb-4" style="z-index:22;">
 						<div class=" ">
 							<h2 class="text-f-3-5-3 white section-card-header-2">04-NOVEMBER-2020</h2>
 							<div class="section-box-2 text-h-2-4-2">
@@ -349,12 +435,12 @@
 									Venue: Hall and Balcony
 								</p>
 									<div class="mb-4"> </div>
-								<a class="spc-btn-2" href="#">Read More</a>
+								<a class="spc-btn-2" href="./event-list-details.html">Read More</a>
 							</div>
 						</div>
 					</div>
 					<!-- 2 -->
-					<div class="col col-4 mb-2" style="z-index:22;">
+					<div class="col-lg-4 col-sm-12 mb-4" style="z-index:22;">
 						<div class=" ">
 							<h2 class="text-f-3-5-3 white section-card-header-2">04-NOVEMBER-2020</h2>
 							<div class="section-box-2 text-h-2-4-2">
@@ -369,12 +455,12 @@
 									Venue: Hall and Balcony
 								</p>
 									<div class="mb-4"> </div>
-								<a class="spc-btn-2" href="#">Read More</a>
+								<a class="spc-btn-2" href="./event-list-details.html">Read More</a>
 							</div>
 						</div>
 					</div>
 					<!-- 3 -->
-					<div class="col col-4 mb-2" style="z-index:22;">
+					<div class="col-lg-4 col-sm-12 mb-4" style="z-index:22;">
 						<div class=" ">
 							<h2 class="text-f-3-5-3 white section-card-header-2">04-NOVEMBER-2020</h2>
 							<div class="section-box-2 text-h-2-4-2">
@@ -389,12 +475,117 @@
 									Venue: Hall and Balcony
 								</p>
 									<div class="mb-4"> </div>
-								<a class="spc-btn-2" href="#">Read More</a>
+								<a class="spc-btn-2" href="./event-list-details.html">Read More</a>
 							</div>
 						</div>
 					</div>
+					</div>
+
 				</div>
-				<div class="tab-pane fade" id="pills-notices" role="tabpanel" aria-labelledby="pills-notices-tab">...</div>
+				<!-- Notices -->
+				<div class="tab-pane fade" id="pills-notices" role="tabpanel" aria-labelledby="pills-notices-tab">
+					<div class="container notices-box">
+						<!-- <h2 class="text-f-8-7-8 spc-blue text-left spc-line">Events</h2> -->
+						<a href="./notices-list-details.html" class="justify-content-center mb-2">
+							<div class=" ">
+								<div class="d-flex row">
+								<!-- 1 -->
+								<div class="col-lg-12 col-sm-12 mb-4" style="z-index:22;">
+			
+										<div class="d-flex section-box-3 text-h-2-4-2">
+			
+										<div class="col-lg-1 col-sm-2  mr-lg-4">
+											<h2 class="text-h-6-4-6 white section-card-header-3 text-center">23</h2>
+										</div>
+			
+										<div class="col-10">
+											<h4 class="text-f-2-4-2 spc-blue">
+												23-NOVEMBER-2020
+											</h4>
+											<div class="mb-4"> </div>
+											<p class="text-h-1-4-1 gray-800">
+												Winter School Uniform
+											</p>
+										</div>
+			
+									</div>
+			
+								</div>
+								<!-- 1 -->
+								</div>
+			
+							</div>
+			
+						</a>
+						<!-- - -->
+						<a href="./notices-list-details.html" class="justify-content-center mb-2">
+							<div class=" ">
+								<div class="d-flex row">
+								<!-- 1 -->
+								<div class="col-lg-12 col-sm-12 mb-4" style="z-index:22;">
+			
+										<div class="d-flex section-box-3 text-h-2-4-2">
+			
+										<div class="col-lg-1 col-sm-2  mr-lg-4">
+											<h2 class="text-h-6-4-6 white section-card-header-3 text-center">23</h2>
+										</div>
+			
+										<div class="col-10">
+											<h4 class="text-f-2-4-2 spc-blue">
+												23-NOVEMBER-2020
+											</h4>
+											<div class="mb-4"> </div>
+											<p class="text-h-1-4-1 gray-800">
+												Winter School Uniform Guidelines
+											</p>
+										</div>
+			
+									</div>
+			
+								</div>
+								<!-- 1 -->
+								</div>
+			
+							</div>
+			
+						</a>
+						<!-- - -->
+						<a href="./notices-list-details.html" class="justify-content-center mb-2">
+							<div class=" ">
+								<div class="d-flex row">
+								<!-- 1 -->
+								<div class="col-lg-12 col-sm-12 mb-4" style="z-index:22;">
+			
+										<div class="d-flex section-box-3 text-h-2-4-2">
+			
+										<div class="col-lg-1 col-sm-2  mr-lg-4">
+											<h2 class="text-h-6-4-6 white section-card-header-3 text-center">07</h2>
+										</div>
+			
+										<div class="col-10">
+											<h4 class="text-f-2-4-2 spc-blue">
+												07-NOVEMBER-2020
+											</h4>
+											<div class="mb-4"> </div>
+											<p class="text-h-1-4-1 gray-800">
+												Form One (2021-2022) Admissions Application
+											</p>
+										</div>
+			
+									</div>
+			
+								</div>
+								<!-- 1 -->
+								</div>
+			
+							</div>
+			
+						</a>
+						<!-- - -->
+			
+					</div>
+				</div>
+				<!-- Notices -->
 			</div>
 		</div>
 	</section>
@@ -455,5 +646,81 @@
 	<!-- Swiper JS -->
 	<script src="./dist/js/swiper-bundle.min.js"></script>
 	<script src="./dist/js/all.js"></script>
+	<script>
+	(function($) { // Begin jQuery
+		$(function() { // DOM ready
+			// If a link has a dropdown, add sub menu toggle.
+			$('nav ul li a:not(:only-child)').click(function(e) {
+				$(this).siblings('.nav-dropdown').toggle();
+				// Close one dropdown when selecting another
+				$('.nav-dropdown').not($(this).siblings()).hide();
+				e.stopPropagation();
+			});
+			// Clicking away from dropdown will remove the dropdown class
+			$('html').click(function() {
+				$('.nav-dropdown').hide();
+			});
+			// Toggle open and close nav styles on click
+			$('#nav-toggle').click(function() {
+				$('nav ul').slideToggle();
+			});
+			// Hamburger to X toggle
+			$('#nav-toggle').on('click', function() {
+				this.classList.toggle('active');
+			});
+		}); // end DOM ready
+	})(jQuery); // end jQuery
+	</script>
+	  <script>
+			var swiper2 = new Swiper('.swiper-container2', {
+				slidesPerView: 1,
+				spaceBetween: 10,
+				// init: false,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: false,
+				},
+				breakpoints: {
+					640: {
+						slidesPerView: 1,
+						spaceBetween: 20,
+					},
+					768: {
+						slidesPerView: 2,
+						spaceBetween: 20,
+					},
+					1024: {
+						slidesPerView: 3,
+						spaceBetween: 20,
+					},
+				}
+			});
+		</script>
+<script>
+	//search
+document.addEventListener("touchstart", function(){}, true);
+</script>
+<script>
+	window.onscroll = function() {headerFixed()};
+	
+	var header = document.getElementById("headerFixed");
+	var sticky = header.offsetTop;
+	
+	function headerFixed() {
+		if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		} else {
+			header.classList.remove("sticky");
+		}
+	}
+	</script>
+	<script>
+	$(function() {     
+			$('.nav').on('click',function(e) {
+					e.preventDefault();
+					$(".side-categories").slideToggle();
+			});
+	});
+	</script>
 </body>
 </html>
