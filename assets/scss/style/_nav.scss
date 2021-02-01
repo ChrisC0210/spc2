@@ -1,6 +1,7 @@
 .spc-top{
 	height: 70px;
 	background-color: $spc-blue;
+	//position: relative;
 	position: relative;
 	&::after{
 		content: " ";
@@ -101,4 +102,30 @@
 	flex: 1;
 	padding:0px 0px 0 0;
 	//margin:-14px 0px 0 0;
+}
+//link button
+.side-categories{
+	background-color: $spc-red;
+	position: fixed;
+	top: 54%;
+	right: 0px;
+	z-index: 999999;
+	font-size: 14px;
+	//margin: 30px 30px 30px 0px;
+	li>a{
+		font-size: 14px;
+		line-height: 40px;
+		color: $white;
+		padding: 0px 30px 0px 30px;
+		//margin: 30px 0px 30px 0px;
+		text-decoration: none;
+	}
+	li{
+		&:hover,:active,:focus {
+			//background-color:$vela-green-600;
+			text-decoration: none;
+			background-color: $spc-red-400;
+			color: $white;
+		}
+	}
 }

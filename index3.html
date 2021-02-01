@@ -30,7 +30,25 @@
       position: absolute;
 			bottom: -30px;
 			text-align: center;
-    }
+		}
+		.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
 </style>
 <body>
 	<!-- header -->
@@ -54,7 +72,7 @@
 			</li>
 		</ul>
 	</header>
-	<section class="navigation text-h-1-4-1 fixed-top" id="headerFixed" style="position: fixed;  width: -webkit-fill-available;">
+	<section class="navigation text-h-1-4-1" id="headerFixed" style="position: fixed;  width: -webkit-fill-available;">
 		<div class="nav-container">
 			<div class="brand">
 				<a href="/">
@@ -219,6 +237,21 @@
     <!-- header --> 
 	<section class="jd-slider slider2">
 		<!-- <h2>Infinite Loop</h2> -->
+		<!-- link -->
+		<li id="navicon text-h-1-4-1">
+      <a href="" class="nav text-h-1-4-1">
+			<button class="popup btn-link text-h-1-4-1">Link</button>
+
+      </a>
+    </li>  
+    <ul class="side-categories text-h-1-4-1" style="display:none">
+			<li><a href="#">Our Facebook</a></li>
+			<li><a href="#">Music Department</a></li>
+			<li><a href="#">PE Department’s Facebook</a></li>
+			<li><a href="#">SPC Academy</a></li>
+		</ul>
+
+		<!-- link -->
 		<div class="slide-inner">
 				<ul class="slide-area">
 						<li>
@@ -229,14 +262,14 @@
 						<li>
 								<a href="#">
 										<video autoplay="true" loop="" muted="" >
-											<source src="./assets/img/spc-video-1.mp4" type="video/mp4">
+											<source src="./assets/img/spc-video-2.mp4" type="video/mp4">
 										</video>
 								</a>
 						</li>
 						<li>
 								<a href="#">
 									<video autoplay="true" loop="" muted="" >
-										<source src="./assets/img/spc-video-1.mp4" type="video/mp4">
+										<source src="./assets/img/spc-video-3.mp4" type="video/mp4">
 									</video>
 								</a>
 						</li>
@@ -402,7 +435,7 @@
 									Venue: Hall and Balcony
 								</p>
 									<div class="mb-4"> </div>
-								<a class="spc-btn-2" href="#">Read More</a>
+								<a class="spc-btn-2" href="./event-list-details.html">Read More</a>
 							</div>
 						</div>
 					</div>
@@ -422,7 +455,7 @@
 									Venue: Hall and Balcony
 								</p>
 									<div class="mb-4"> </div>
-								<a class="spc-btn-2" href="#">Read More</a>
+								<a class="spc-btn-2" href="./event-list-details.html">Read More</a>
 							</div>
 						</div>
 					</div>
@@ -442,7 +475,7 @@
 									Venue: Hall and Balcony
 								</p>
 									<div class="mb-4"> </div>
-								<a class="spc-btn-2" href="#">Read More</a>
+								<a class="spc-btn-2" href="./event-list-details.html">Read More</a>
 							</div>
 						</div>
 					</div>
@@ -675,11 +708,19 @@ document.addEventListener("touchstart", function(){}, true);
 	
 	function headerFixed() {
 		if (window.pageYOffset > sticky) {
-			header.classList.add("fixed-top");
+			header.classList.add("sticky");
 		} else {
-			header.classList.remove("fixed-top");
+			header.classList.remove("sticky");
 		}
 	}
+	</script>
+	<script>
+	$(function() {     
+			$('.nav').on('click',function(e) {
+					e.preventDefault();
+					$(".side-categories").slideToggle();
+			});
+	});
 	</script>
 </body>
 </html>
