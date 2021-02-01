@@ -12102,4 +12102,12 @@ footer {
 .breadcrumb a {
   color: #274778;
 }
+
+.swiper-slide {
+  border: solid 2px #D6D6D6;
+}
+
+.swiper-slide:hover, .swiper-slide :active, .swiper-slide :focus {
+  border: solid 2px #274778;
+}
 /*# sourceMappingURL=all.css.map */

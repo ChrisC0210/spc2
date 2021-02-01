@@ -72,7 +72,7 @@
 			</li>
 		</ul>
 	</header>
-	<section class="navigation text-h-1-4-1" id="headerFixed" style="position: fixed;  width: -webkit-fill-available;">
+	<section class="navigation text-h-1-4-1" id="headerFixed" style="position: fixed;  width: -webkit-fill-available;font-size: 14px;">
 		<div class="nav-container">
 			<div class="brand">
 				<a href="/">
@@ -239,7 +239,7 @@
 		<!-- <h2>Infinite Loop</h2> -->
 		<!-- link -->
 		<li id="navicon text-h-1-4-1">
-      <a href="" class="nav text-h-1-4-1">
+      <a href="" class="nav-link-red text-h-1-4-1">
 			<button class="popup btn-link text-h-1-4-1">Link</button>
 
       </a>
@@ -716,7 +716,7 @@ document.addEventListener("touchstart", function(){}, true);
 	</script>
 	<script>
 	$(function() {     
-			$('.nav').on('click',function(e) {
+			$('.nav-link-red').on('click',function(e) {
 					e.preventDefault();
 					$(".side-categories").slideToggle();
 			});

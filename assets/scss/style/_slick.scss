@@ -3,7 +3,7 @@
   //font-size: 20px;
   //line-height: 1;
   opacity: .75;
-  color: $vela-blue;
+  color: $spc-blue;
   //-webkit-font-smoothing: antialiased;
   //-moz-osx-font-smoothing: grayscale;
 
@@ -43,6 +43,7 @@
   }
   .slick-slide{
     display: block;
+    border: solid 2px $spc-blue;
     @media screen and (max-width: 500px) {
       display: flex;
       justify-content: center;

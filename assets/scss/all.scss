@@ -29,3 +29,9 @@
         color: $spc-blue;
     }
 }
+.swiper-slide{
+	border: solid 2px $gray-400;
+		&:hover,:active,:focus {
+			border: solid 2px $spc-blue;
+		}
+	}
