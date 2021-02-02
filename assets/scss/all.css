@@ -12028,33 +12028,33 @@ footer {
   margin-top: 0px;
 }
 
-.swiper-container {
+.swiper-container-1 {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.swiper-slide {
+.swiper-slide-1 {
   background-position: center;
   background-size: cover;
   width: 300px;
   height: 300px;
 }
 
-.swiper-slide .title {
+.swiper-slide-1 .title {
   position: absolute;
   bottom: -50px;
 }
 
-.swiper-slide {
+.swiper-slide-1 {
   border: solid 2px #D6D6D6;
 }
 
-.swiper-slide:hover, .swiper-slide :active, .swiper-slide :focus {
+.swiper-slide-1:hover, .swiper-slide-1 :active, .swiper-slide-1 :focus {
   border: solid 2px #274778;
 }
 
-.swiper-content {
+.swiper-content-1 {
   padding: 4px;
   background-color: #274778;
   color: #fefefe;

@@ -170,7 +170,7 @@ $(document).ready(function () {
 	// 	},
 	// });
 	//
-	var swiper = new Swiper('.swiper-container', {
+	var swiper = new Swiper('.swiper-container-1', {
 		effect: 'coverflow',
 		grabCursor: true,
 		centeredSlides: true,
@@ -186,4 +186,15 @@ $(document).ready(function () {
 				el: '.swiper-pagination',
 		},
 	});
+	//2 Initialize Swiper -->
+    var swiper2 = new Swiper('.swiper-container-2', {
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+			},
+			autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
 });

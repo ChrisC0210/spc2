@@ -33,16 +33,13 @@
 }
 .swiper-container-2 {
       width: 100%;
-			height: 100vh;
+      height: 100%;
     }
 
     .swiper-slide-2 {
       text-align: center;
       font-size: 18px;
 			background: #fff;
-      background-position: center;
-			background-size: cover;
-			object-fit: cover;
 			}
 			
 </style>
@@ -248,9 +245,46 @@
 		</ul>
 
 		<!-- link -->
-
+		<div class="slide-inner">
+				<ul class="slide-area">
+						<li>
+							<video autoplay="true" loop="" muted="" >
+								<source src="./assets/img/spc-video-1.mp4" type="video/mp4">
+							</video>
+						</li>
+						<li>
+								<a href="#">
+										<video autoplay="true" loop="" muted="" >
+											<source src="./assets/img/spc-video-2.mp4" type="video/mp4">
+										</video>
+								</a>
+						</li>
+						<li>
+								<a href="#">
+									<video autoplay="true" loop="" muted="" >
+										<source src="./assets/img/spc-video-3.mp4" type="video/mp4">
+									</video>
+								</a>
+						</li>
+				</ul>
+				<a class="prev" href="#">
+						<i class="fas fa-angle-left fa-2x"></i>
+				</a>
+				<a class="next" href="#">
+						<i class="fas fa-angle-right fa-2x"></i>
+				</a>
+				<!-- .. -->
+				<div class="controller">
+					<a class="auto" href="#">
+							<i class="fas fa-play fa-xs"></i>
+							<i class="fas fa-pause fa-xs"></i>
+					</a>
+					<div class="indicate-area"></div>
+			</div>
+				<!-- .. -->
+		</div>
 	</section>
-	<!-- Swiper -->
+		  <!-- Swiper -->
 			<div class="swiper-container swiper-container-2">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide swiper-slide-2">
