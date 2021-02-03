@@ -11208,6 +11208,7 @@ address, caption, cite, code, dfn, em, var {
   text-decoration: none;
   background-color: #C80C30;
   color: #fefefe;
+  padding: 10px 200px 10px 20px;
 }
 
 .img-big {

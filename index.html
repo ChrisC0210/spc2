@@ -250,7 +250,7 @@
 		<!-- link -->
 
 	</section>
-	<!-- Swiper -->
+<!-- Swiper -->
 			<div class="swiper-container swiper-container-2">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide swiper-slide-2">
@@ -260,12 +260,12 @@
 					</div>
 					<div class="swiper-slide swiper-slide-2">
 						<video autoplay="true" loop="" muted="" >
-							<source src="./assets/img/spc-video-1.mp4" type="video/mp4">
+							<source src="./assets/img/spc-video-2.mp4" type="video/mp4">
 						</video>
 					</div>
 					<div class="swiper-slide swiper-slide-2">
 						<video autoplay="true" loop="" muted="" >
-							<source src="./assets/img/spc-video-1.mp4" type="video/mp4">
+							<source src="./assets/img/spc-video-3.mp4" type="video/mp4">
 						</video>
 					</div>
 					<div class="swiper-slide swiper-slide-2">
@@ -274,6 +274,8 @@
 				</div>
 				<!-- Add Pagination -->
 						<div class="swiper-pagination"></div>
+						<div class="swiper-button-next swiper-button-white"></div>
+						<div class="swiper-button-prev swiper-button-white"></div>
 					</div>
 	<section class="bg-blue d-flex">
 		<div class="container">
@@ -362,6 +364,8 @@
 							</div>
 							<!-- Add Pagination -->
 							<div class="swiper-pagination mt-4"></div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 					</div>
 			</div>
 		</div>
@@ -669,17 +673,13 @@
 				this.classList.toggle('active');
 			});
 		}); // end DOM ready
-	})(jQuery); // end jQuery
-	</script>
-<script>
-	//search
-document.addEventListener("touchstart", function(){}, true);
-</script>
-<script>
-	window.onscroll = function() {headerFixed()};
-	
-	var header = document.getElementById("headerFixed");
-	var sticky = header.offsetTop;
+		//
+		//search
+		document.addEventListener("touchstart", function(){}, true);
+		//
+		window.onscroll = function() {headerFixed()};
+		var header = document.getElementById("headerFixed");
+		var sticky = header.offsetTop;
 	
 	function headerFixed() {
 		if (window.pageYOffset > sticky) {
@@ -688,6 +688,8 @@ document.addEventListener("touchstart", function(){}, true);
 			header.classList.remove("sticky");
 		}
 	}
+		//
+	})(jQuery); // end jQuery
 	</script>
 	<script>
 	$(function() {     
@@ -695,8 +697,21 @@ document.addEventListener("touchstart", function(){}, true);
 					e.preventDefault();
 					$(".side-categories").slideToggle();
 			});
+			//
+				//
+	$('.nav-link-red').click(function() {
+    var $this = $(this);
+    if ($this.hasClass('swiper-slide-active')) {
+        $this.removeClass('swiper-slide-active');
+    } else if ($this.hasClass('swiper-slide-next')) {
+        $this.removeClass('swiper-slide-next').addClass('swiper-slide-active');
+    } else if ($this.hasClass('swiper-slide-prev')){
+			//$this.removeClass('swiper-slide-prev').addClass('swiper-slide-active');
+    }
+});
+	//
+			//
 	});
 	</script>
-
 </body>
 </html>
