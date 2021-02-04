@@ -221,5 +221,10 @@ $(document).ready(function () {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-    });
+		});
+		//aos
+		AOS.init({
+			easing: 'ease-in-out-sine'
+		});
+		//
 });
