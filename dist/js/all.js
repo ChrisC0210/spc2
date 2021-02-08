@@ -207,21 +207,68 @@ $(document).ready(function () {
 });
 	//
 	//2 Initialize Swiper -->
-    var swiper2 = new Swiper('.swiper-container-2', {
-      pagination: {
-        el: '.swiper-pagination',
-				dynamicBullets: true,
-				clickable: true,
-			},
-			autoplay: {
-        delay: 6500,
-        disableOnInteraction: false,
-			},
-			navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-		});
+    // var swiper2 = new Swiper('.swiper-container-2', {
+    //   pagination: {
+    //     el: '.swiper-pagination',
+		// 		dynamicBullets: true,
+		// 		clickable: true,
+		// 	},
+		// 	autoplay: {
+		// 		delay: 1000,
+		// 		stopOnLastSlide: false,
+		// 		disableOnInteraction: true,
+		// 		waitForTransition: false, 
+		// 	},
+		// 	loop: true,
+		// 	navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    //   },
+		// });
+		//
+var swiper = new Swiper('.swiper-container-2', {
+	loop: true,
+	autoplay: {
+		delay: 5000,
+	},
+  pagination: {
+		el: '.swiper-pagination',
+		dynamicBullets: true,
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  /* ON INIT AUTOPLAY THE FIRST VIDEO */
+  on: {
+    init: function () {
+      console.log('swiper initialized');
+      var currentVideo =  $("[data-swiper-slide-index=" + this.realIndex + "]").find("video");
+      currentVideo.trigger('play');
+    },
+  },
+});
+
+/* GET ALL VIDEOS */
+var sliderVideos = $(".swiper-slide video");
+
+/* SWIPER API - Event will be fired after animation to other slide (next or previous) */
+swiper.on('slideChange', function () {
+  console.log('slide changed');
+  /* stop all videos (currentTime buggy without this loop idea) */
+  sliderVideos.each(function( index ) {
+    this.currentTime = 0;
+  });
+
+  /* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
+  var prevVideo =  $("[data-swiper-slide-index=" + this.previousIndex + "]").find("video");
+  var currentVideo =  $("[data-swiper-slide-index=" + this.realIndex + "]").find("video");
+  prevVideo.trigger('stop');
+  currentVideo.trigger('play');
+});
+		//
 		//aos
 		AOS.init({
 			easing: 'ease-in-out-sine'
