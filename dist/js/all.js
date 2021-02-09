@@ -193,6 +193,7 @@ $(document).ready(function () {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
+		autoplay: true,
 	});
 	//
 	$('.swiper-slide-1').click(function() {
@@ -229,7 +230,7 @@ $(document).ready(function () {
 var swiper = new Swiper('.swiper-container-2', {
 	loop: true,
 	autoplay: {
-		delay: 5000,
+		delay: 4000,
 	},
   pagination: {
 		el: '.swiper-pagination',
@@ -268,10 +269,5 @@ swiper.on('slideChange', function () {
   prevVideo.trigger('stop');
   currentVideo.trigger('play');
 });
-		//
-		//aos
-		AOS.init({
-			easing: 'ease-in-out-sine'
-		});
 		//
 });

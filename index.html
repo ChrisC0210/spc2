@@ -12,7 +12,6 @@
 
 
 </head>
-<!-- Demo styles -->
 <style>
 .header {
   padding: 10px 16px;
@@ -654,8 +653,8 @@
 	<script src="./dist/js/aos.js"></script>
 	<script src="./dist/js/all.js"></script>
 	<script>
-	(function($) { // Begin jQuery
-		$(function() { // DOM ready
+	$(function() { 
+		//
 			// If a link has a dropdown, add sub menu toggle.
 			$('nav ul li a:not(:only-child)').click(function(e) {
 				$(this).siblings('.nav-dropdown').toggle();
@@ -675,15 +674,8 @@
 			$('#nav-toggle').on('click', function() {
 				this.classList.toggle('active');
 			});
-		}); // end DOM ready
-	})(jQuery); // end jQuery
-	</script>
-<script>
-	//search
-document.addEventListener("touchstart", function(){}, true);
-</script>
-<script>
-	window.onscroll = function() {headerFixed()};
+		//scroll
+		window.onscroll = function() {headerFixed()};
 	
 	var header = document.getElementById("headerFixed");
 	var sticky = header.offsetTop;
@@ -695,13 +687,16 @@ document.addEventListener("touchstart", function(){}, true);
 			header.classList.remove("sticky");
 		}
 	}
-	</script>
-	<script>
-	$(function() {     
+	//   
 			$('.nav-link-red').on('click',function(e) {
 					e.preventDefault();
 					$(".side-categories").slideToggle();
 			});
+			//aos
+		AOS.init({
+			easing: 'ease-in-out-sine'
+		});
+		//
 	});
 	</script>
 </body>
