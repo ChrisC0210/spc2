@@ -230,8 +230,9 @@ $(document).ready(function () {
 var swiper = new Swiper('.swiper-container-2', {
 	loop: true,
 	autoplay: {
-		delay: 4000,
+		delay: 5000,
 	},
+	freeMode: true,
   pagination: {
 		el: '.swiper-pagination',
 		dynamicBullets: true,
