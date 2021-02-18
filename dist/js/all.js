@@ -232,6 +232,7 @@ var swiper = new Swiper('.swiper-container-2', {
 	autoplay: {
 		delay: 5000,
 	},
+	effect: 'fade',
 	freeMode: true,
   pagination: {
 		el: '.swiper-pagination',
