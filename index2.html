@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SPC</title>
+	<link rel="shortcut icon" type="image/x-icon" href="./assets/icon/spc.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="../dist/css/aos.css" />
+	<link rel="stylesheet" href="./dist/css/all.min.css">
+
+
+</head>
+<style>
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.swiper-container-2 {
+      width: 100%;
+			height: 100vh;
+    }
+
+    .swiper-slide-2 {
+      text-align: center;
+      font-size: 18px;
+			background: #fff;
+      background-position: center;
+			background-size: cover;
+			object-fit: cover;
+			}
+			
+</style>
+<body>
+	<!-- header -->
+	<header class="spc-top">
+		<ul class="container text-h-1-4-1 white">
+			<li><a href="#">School Intranet</a></li>
+			<li><a href="#">Learning Hub</a></li>
+			<li><a href="#">OLE</a></li>
+			<li><a href="#">SPC Academy</a></li>
+			<li><a href="#">Sports Record System</a></li>
+			<li><a href="#">Library</a></li>
+			<li><a href="#">Sitemap</a></li>
+			<li class="nav-right">
+				<form class="search-container" action="//llamaswill.tumblr.com/search">
+					<input id="search-box" type="text" class="search-box" name="q" />
+					<label for="search-box"><span class="search-icon">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</span></label>
+					<input type="submit" id="search-submit" />
+				</form>
+			</li>
+		</ul>
+	</header>
+	<section class="navigation text-h-1-4-1" id="headerFixed" style="position: fixed;  width: -webkit-fill-available;font-size: 14px;">
+		<div class="nav-container">
+			<div class="brand">
+				<a href="/">
+					<img class="spc-logo" src="./assets/img/spc-logo.png" alt="spc-logo">
+				</a>
+			</div>
+			<nav>
+				<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+				<ul class="nav-list">
+					<li>
+						<a href="#!">About us</a>
+						<ul class="nav-dropdown">
+							<li>
+								<a href="http://spc2021.vela.hk/principal_message.php?mid=1-16">Principal Message</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=7&mid=1-21">College Council</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=51&mid=1-101">SPC at a glance</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=59&mid=1-17">Motto, Mission and Goals</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=4&mid=1-18">College Badge</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=5&mid=1-19">College Hymn/ Song</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=166&mid=1-15">College History</a>
+							</li>
+							<li>
+								<a href="http://archives.spc.edu.hk/main2.php" target="_blank">College Archives</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=65&mid=1-154">Plans and Reports</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=121&mid=1-174">College Facilities</a>
+							</li>
+							<li>
+								<a href="/upload_files/editor_image/school_calendar_2020-2021.pdf" target="_blank">School Calendar</a>
+							</li>
+							<li>
+								<a href="http://spc2021.vela.hk/content.php?id=164&mid=1-211">News from St. Paul's</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#!">Admissions</a>
+						<ul class="nav-dropdown">
+							<li>
+								<a href="content.php?id=156&amp;mid=70-103" class="">Form 1 Admissions 中一入學申請</a>
+							</li>
+							<li>
+								<a href="content.php?id=151&amp;mid=70-130" class="">Forms 2 and 3 Admissions 中二及中三入學申請</a>
+							</li>
+							<li>
+								<a href="content.php?id=131&amp;mid=70-108" class="">School Fees 學費</a>
+							</li>
+							<li>
+								<a href="content.php?id=168&amp;mid=70-105" class="">Fee Remission Scheme</a>
+							</li>
+							<li>
+								<a href="content.php?id=169&amp;mid=70-215" class="">學費減免計劃</a>
+							</li>
+							<li>
+								<a href="content.php?id=128&amp;mid=70-106" class="">Scholarships 獎學金</a>
+							</li>
+							<li>
+								<a href="content.php?id=87&amp;mid=70-128" class="">Download  Page 下載</a>
+							</li>
+							<li>
+								<a href="content.php?id=165&amp;mid=70-213" class="">Publications</a>
+							</li>
+							<li>
+								<a href="content.php?id=172&amp;mid=70-221" class="">Student Welfare</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#!">Staff </a>
+						<ul class="nav-dropdown">
+							<li>
+								<a href="all_teacher.php?mid=3-26" class="">All Teachers</a>
+							</li>
+							<li>
+								<a href="content.php?id=115&amp;mid=3-170" class="">Employment Opportunities</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#!">Curriculum</a>
+						<ul class="nav-dropdown">
+							<li><a href="content.php?id=48&amp;mid=4-165" class="">Junior Secondary (Forms 1-3)</a></li>
+							<li><a href="content.php?id=49&amp;mid=4-166" class="">Senior Secondary (Forms 4-6)</a></li>
+							<li><a href="content.php?id=152&amp;mid=4-203" class="">IAL</a></li>
+							<li><a href="content.php?id=35&amp;mid=4-39" class="">Departments</a></li>
+							<li><a href="content.php?id=159&amp;mid=4-209" class="">Learning Hub</a></li>
+							<li><a href="content.php?id=109&amp;mid=4-140" class="">Academic Results</a></li>
+							<li><a href="content.php?id=113&amp;mid=4-167-168" class="">Other Programmes</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#!">Co-curriculum</a>
+						<ul class="nav-dropdown">
+							<li><a href="content.php?id=39&amp;mid=72-79" class="">Overview</a></li>
+							<li><a href="content.php?id=174&amp;mid=72-141" class="">Morning Assembly</a></li>
+							<li><a href="content.php?id=71&amp;mid=72-80" class="">Music</a></li>
+							<li><a href="content.php?id=44&amp;mid=72-81" class="">Sports</a></li>
+							<li><a href="content.php?id=145&amp;mid=72-197" class="">ALPS Programmes</a></li>
+							<li><a href="https://sites.google.com/stpauls.edu.hk/spcsi/" class="">SPC Academy</a></li>
+							<li><a href="content.php?id=146&amp;mid=72-198" class="">Activity Week</a></li>
+							<li><a href="http://olespc.shutterfly.com/" target="_blank" class="">Other Learning Experiences</a></li>
+							<li><a href="content.php?id=23&amp;mid=72-88" class="">Gifted Education</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#!">Global Classroom </a>
+						<ul class="nav-dropdown">
+							<li><a href="content.php?id=17&amp;mid=6-46" class="">Tours</a></li>
+							<li><a href="tour_archive.php?mid=6-47" class="">Archive</a></li>
+							<li><a href="content.php?id=40&amp;mid=6-30" class="">Teacher Visits</a></li>
+							<li><a href="content.php?id=24&amp;mid=6-48" class="">Linked Schools</a></li>
+							<li><a href="content.php?id=80&amp;mid=6-123" class="">Assembly Presentations</a></li>
+							</ul>
+					</li>
+					<li>
+						<a href="#!">Students</a>
+						<ul class="nav-dropdown">
+							<li><a href="content.php?id=120&amp;mid=8-86" class="">Student Support</a></li>
+							<li><a href="content.php?id=25&amp;mid=8-55" class="">The Students' Association</a></li>
+							<li><a href="content.php?id=28&amp;mid=8-56" class="">Prefects' Council</a></li>
+							<li><a href="content.php?id=31&amp;mid=8-57" class="">House System</a></li>
+							<li><a href="content.php?id=137&amp;mid=8-124" class="">Careers and Life Planning</a></li>
+							<li><a href="content.php?id=47&amp;mid=8-208" class="">University Honours</a></li>
+							<li><a href="content.php?id=82&amp;mid=8-126" class="">Destinations of our graduates</a></li>
+							<li><a href="content.php?id=172&amp;mid=8-220" class="">Student Welfare</a></li>
+							</ul>
+					</li>
+					<li>
+						<a href="#!">SPC Family</a>
+						<ul class="nav-dropdown">
+							<li><a href="http://www.spc-ps.edu.hk/" target="_blank" class="">Primary School</a></li>
+							<li><a href="http://www.spc.edu.hk/pta/" target="_blank" class="">Parent-Teacher Association</a></li>
+							<li><a href="http://www.alumni.org.hk/" target="_blank" class="">St. Paul's College Alumni Association</a></li>
+							<li><a href="http://www.spcalumni.com/" target="_blank" class="">St. Paul's College Alumni Association (Ontario)</a></li>
+							<li><a href="http://www.spc-foundation.org.hk" target="_blank" class="">Foundation</a></li>
+							<li><a href="https://www.facebook.com/10th-Hong-Kong-Group-162053538538/" target="_blank" class="">Scout Association of HK 10th Hong Kong Group</a></li>
+							<li><a href="https://www.spc-connect.net/" target="_blank" class="">Membership in the SPC Community</a></li>
+							</ul>
+					</li>
+					<li>
+						<a href="#!">Contact Us</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+    <!-- header --> 
+	<section class="jd-slider slider2">
+		<!-- <h2>Infinite Loop</h2> -->
+		<!-- link -->
+		<li id="navicon text-h-1-4-1">
+      <a href="" class="nav-link-red text-h-1-4-1">
+			<button class="popup btn-link text-h-1-4-1">Link</button>
+
+      </a>
+    </li>  
+    <ul class="side-categories text-h-1-4-1" style="display:none">
+			<li><a href="#">Our Facebook</a></li>
+			<li><a href="#">Music Department</a></li>
+			<li><a href="#">PE Department’s Facebook</a></li>
+			<li><a href="#">SPC Academy</a></li>
+		</ul>
+
+		<!-- link -->
+
+	</section>
+<!-- Swiper -->
+			<div class="swiper-container swiper-container-2">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide swiper-slide-2">
+						<video controls muted loop>
+							<source src="./assets/img/spc-video-1.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="swiper-slide swiper-slide-2"  data-swiper-autoplay="5000">
+						<video controls muted loop>
+							<source src="./assets/img/spc-video-2.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="swiper-slide swiper-slide-2"  data-swiper-autoplay="5000">
+						<video controls muted loop>
+							<source src="./assets/img/spc-video-3.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="swiper-slide swiper-slide-2">
+						<img src="./assets/img/IMG_1339.JPG" alt="">
+					</div>
+				</div>
+				<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+	<section class="bg-blue d-flex">
+		<div class="container">
+			<div class="col-lg-6 col-sm-12" style="z-index:22;">
+				<h2 class="text-f-5-max white mb-4 text-sm-center" style="z-index:22;">Overview</h2>
+				<div class="justify-content-between">
+					<div class="section-box text-h-2-4-2 aos-item" data-aos="fade-up">
+						<p class="gray-900">
+							In addition to developing students’ intellectual capabilities, the College also aims at fostering the development of the whole person. Extra-curricular activities play an integral role in students’ lives and every opportunity is provided to extend students’ potential.
+						</p>
+							<div class="mb-4"> </div>
+						<a class="spc-btn-1" href="#">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 col-sm-12 aos-item" data-aos="fade-up">
+				<div>
+					<img class="section-img" src="./assets/img/bg-content-1.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bg-white">
+		<div class="container">
+			<h2 class="text-f-8-7-8 spc-blue text-center spc-line">News</h2>
+			<div class=" ">
+				<!-- Swiper -->
+						<div class="swiper-container swiper-container-1 mb-4">
+							<div class="swiper-wrapper mb-4">
+									<div class="swiper-slide swiper-slide-1" style="background-image:url(./assets/img/banner-3.jpg)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											Nelson Kei (Class of 2016) wins United College Ming De Scholarship 2020
+										</div>
+										<div class="swiper-content swiper-content-1 text-f-2-4-2">
+											23-11-2020
+										</div>
+									</div>
+									<div class="swiper-slide swiper-slide-1" style="background-image:url(./assets/img/banner-1.jpg)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											Application for 2020-2021 Forms 2 - 3 Admissions...
+										</div>
+										<div class="swiper-content swiper-content-1 text-f-2-4-2">
+											19-11-2020
+										</div>
+									</div>
+									<div class="swiper-slide swiper-slide-1" style="background-image:url(./assets/img/IMG_1339.JPG)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											International Sustainable Development Competition Results
+										</div>
+										<div class="swiper-content swiper-content-1 text-f-2-4-2">
+											19-11-2020
+										</div>
+									</div>
+									<div class="swiper-slide swiper-slide-1" style="background-image:url(./assets/img/banner-2.jpg)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											Talk for Form 3 Parents and Students on the Choice of HKDSE Subjects
+										</div>
+										<div class="swiper-content swiper-content-1 text-f-2-4-2">
+											17-11-2020
+										</div>
+									</div>
+									<div class="swiper-slide swiper-slide-1" style="background-image:url(./assets/img/spc-about5.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											Positivity Ambassadors ready to serve the SPC community
+										</div>
+										<div class="swiper-content swiper-content-1 text-f-2-4-2">
+											13-11-2020
+										</div>
+									</div>
+									<!-- <div class="swiper-slide" style="background-image:url(./assets/img/spc-about6.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											Careers and Life Planning Team
+										</div>
+									</div> -->
+									<!-- <div class="swiper-slide" style="background-image:url(./assets/img/spc-about7.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											SPC Sports
+										</div>
+									</div> -->
+									<!-- <div class="swiper-slide" style="background-image:url(./assets/img/spc-about8.png)">
+										<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+											SPC ACADEMY
+										</div>
+									</div> -->
+									<!-- <div class="swiper-slide" style="background-image:url(http://spc2021.vela.hk/upload_files/banner3/spc-about5.png)"></div> -->
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination mt-4"></div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+					</div>
+			</div>
+		</div>
+	</section>
+	<section class="bg-blue-2">
+		<div class="container d-lg-flex">
+			<div class="col-lg-4 col-md-12 col-sm-12 aos-item" data-aos="fade-up">
+				<div >
+					<img class="section-img-2" src="./assets/img/bg-content-2.png" alt="">
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-12 col-sm-12" style="z-index:22;">
+				<h2 class="text-f-5-max white">Events</h2>
+				<div class="aos-item" data-aos="fade-up">
+					<h2 class="text-f-3-5-3 white section-card-header">04-NOVEMBER-2020</h2>
+					<div class="section-box text-h-2-4-2">
+						<h4 class="text-f-2-5-2 spc-blue">
+							Talk for Form 3 Parents/Guardians and Students on the Choice of Subjects at Senior Secondary Level
+						</h4>
+						<div class="mb-4"> </div>
+						<p class="gray-800">
+							Time: 5:45 p.m. - 7:30 p.m.
+						</p>
+						<p class="gray-900">
+							Venue: Hall and Balcony
+						</p>
+							<div class="mb-4"> </div>
+						<a class="spc-btn-1" href="#">Read More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bg-white-2">
+		<div class="container">
+			<h2 class="text-f-8-7-8 spc-blue text-center spc-line mb-4">Principal’s Message</h2>
+			<div class="d-flex justify-content-center">
+				<div class="aos-item" data-aos="fade-up">
+					<img class="col-12" src="./assets/img/img-principal.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="pb-4 bg-gray">
+		<div class="container">
+				<ul class="nav justify-content-center nav nav-pills mb-3" id="pills-tab" role="tablist">
+					<li class="nav-item mt-4 mb-4" role="presentation">
+						<a class="nav-link active text-f-3-4-3" id="pills-events-tab" data-toggle="pill" href="#pills-events" role="tab" aria-controls="pills-events" aria-selected="true">Events</a>
+					</li>
+					<li class="nav-item mt-4 mb-4" role="presentation">
+						<a class="nav-link text-f-3-4-3" id="pills-notices-tab" data-toggle="pill" href="#pills-notices" role="tab" aria-controls="pills-notices" aria-selected="false">Notices</a>
+					</li>
+				</ul>
+
+			<div class="justify-content-center tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active " id="pills-events" role="tabpanel" aria-labelledby="pills-events-tab">
+					<div class="d-flex row">
+					<!-- 1 -->
+					<div class="col-lg-4 col-sm-12 mb-4" style="z-index:22;">
+						<div class=" ">
+							<h2 class="text-f-3-5-3 white section-card-header-2">04-NOVEMBER-2020</h2>
+							<div class="section-box-2 text-h-2-4-2">
+								<h4 class="text-f-2-5-2 spc-blue">
+									Talk for Form 3 Parents/Guardians and Students on the Choice of Subjects at Senior Secondary Level
+								</h4>
+								<div class="mb-4"> </div>
+								<p class="gray-800">
+									Time: 5:45 p.m. - 7:30 p.m.
+								</p>
+								<p class="gray-900">
+									Venue: Hall and Balcony
+								</p>
+									<div class="mb-4"> </div>
+								<a class="spc-btn-2" href="./event-list-details.html">Read More</a>
+							</div>
+						</div>
+					</div>
+					<!-- 2 -->
+					<div class="col-lg-4 col-sm-12 mb-4" style="z-index:22;">
+						<div class=" ">
+							<h2 class="text-f-3-5-3 white section-card-header-2">04-NOVEMBER-2020</h2>
+							<div class="section-box-2 text-h-2-4-2">
+								<h4 class="text-f-2-5-2 spc-blue">
+									Talk for Form 3 Parents/Guardians and Students on the Choice of Subjects at Senior Secondary Level
+								</h4>
+								<div class="mb-4"> </div>
+								<p class="gray-800">
+									Time: 5:45 p.m. - 7:30 p.m.
+								</p>
+								<p class="gray-900">
+									Venue: Hall and Balcony
+								</p>
+									<div class="mb-4"> </div>
+								<a class="spc-btn-2" href="./event-list-details.html">Read More</a>
+							</div>
+						</div>
+					</div>
+					<!-- 3 -->
+					<div class="col-lg-4 col-sm-12 mb-4" style="z-index:22;">
+						<div class=" ">
+							<h2 class="text-f-3-5-3 white section-card-header-2">04-NOVEMBER-2020</h2>
+							<div class="section-box-2 text-h-2-4-2">
+								<h4 class="text-f-2-5-2 spc-blue">
+									Talk for Form 3 Parents/Guardians and Students on the Choice of Subjects at Senior Secondary Level
+								</h4>
+								<div class="mb-4"> </div>
+								<p class="gray-800">
+									Time: 5:45 p.m. - 7:30 p.m.
+								</p>
+								<p class="gray-900">
+									Venue: Hall and Balcony
+								</p>
+									<div class="mb-4"> </div>
+								<a class="spc-btn-2" href="./event-list-details.html">Read More</a>
+							</div>
+						</div>
+					</div>
+					</div>
+
+				</div>
+				<!-- Notices -->
+				<div class="tab-pane fade" id="pills-notices" role="tabpanel" aria-labelledby="pills-notices-tab">
+					<div class="container notices-box">
+						<!-- <h2 class="text-f-8-7-8 spc-blue text-left spc-line">Events</h2> -->
+						<a href="./notices-list-details.html" class="justify-content-center mb-2">
+							<div class=" ">
+								<div class="d-flex row">
+								<!-- 1 -->
+								<div class="col-lg-12 col-sm-12 mb-4" style="z-index:22;">
+			
+										<div class="d-flex section-box-3 text-h-2-4-2">
+			
+										<div class="col-lg-1 col-sm-2  mr-lg-4">
+											<h2 class="text-h-6-4-6 white section-card-header-3 text-center">23</h2>
+										</div>
+			
+										<div class="col-10">
+											<h4 class="text-f-2-4-2 spc-blue">
+												23-NOVEMBER-2020
+											</h4>
+											<div class="mb-4"> </div>
+											<p class="text-h-1-4-1 gray-800">
+												Winter School Uniform
+											</p>
+										</div>
+			
+									</div>
+			
+								</div>
+								<!-- 1 -->
+								</div>
+			
+							</div>
+			
+						</a>
+						<!-- - -->
+						<a href="./notices-list-details.html" class="justify-content-center mb-2">
+							<div class=" ">
+								<div class="d-flex row">
+								<!-- 1 -->
+								<div class="col-lg-12 col-sm-12 mb-4" style="z-index:22;">
+			
+										<div class="d-flex section-box-3 text-h-2-4-2">
+			
+										<div class="col-lg-1 col-sm-2  mr-lg-4">
+											<h2 class="text-h-6-4-6 white section-card-header-3 text-center">23</h2>
+										</div>
+			
+										<div class="col-10">
+											<h4 class="text-f-2-4-2 spc-blue">
+												23-NOVEMBER-2020
+											</h4>
+											<div class="mb-4"> </div>
+											<p class="text-h-1-4-1 gray-800">
+												Winter School Uniform Guidelines
+											</p>
+										</div>
+			
+									</div>
+			
+								</div>
+								<!-- 1 -->
+								</div>
+			
+							</div>
+			
+						</a>
+						<!-- - -->
+						<a href="./notices-list-details.html" class="justify-content-center mb-2">
+							<div class=" ">
+								<div class="d-flex row">
+								<!-- 1 -->
+								<div class="col-lg-12 col-sm-12 mb-4" style="z-index:22;">
+			
+										<div class="d-flex section-box-3 text-h-2-4-2">
+			
+										<div class="col-lg-1 col-sm-2  mr-lg-4">
+											<h2 class="text-h-6-4-6 white section-card-header-3 text-center">07</h2>
+										</div>
+			
+										<div class="col-10">
+											<h4 class="text-f-2-4-2 spc-blue">
+												07-NOVEMBER-2020
+											</h4>
+											<div class="mb-4"> </div>
+											<p class="text-h-1-4-1 gray-800">
+												Form One (2021-2022) Admissions Application
+											</p>
+										</div>
+			
+									</div>
+			
+								</div>
+								<!-- 1 -->
+								</div>
+			
+							</div>
+			
+						</a>
+						<!-- - -->
+			
+					</div>
+				</div>
+				<!-- Notices -->
+			</div>
+		</div>
+	</section>
+	<!-- footer -->
+		<!-- <hr> -->
+		<div class=" red-line"> </div>
+    <div class="footer-bg" style="background-image:url('./assets/img/bg-footer.png')">
+			<footer class="container py-5 white text-h-1-4-1">
+					<div class="row ">
+							<div class="col-12 col-md">
+								<a class="navbar-brand footer-spc-logo ">
+									<img src="./assets/img/spc-logo.png " alt=" ">
+								</a>
+								<div>69 Bonham Road, Hong Kong.</div>
+								<div>Tel: (852) 2546 2241</div>
+								<div>Email: mail@spc.edu.hk</div>
+								<!-- <small class="d-block mb-3 text-muted ">© 2017-2020</small> -->
+							</div>
+							<div class="col-6 col-md ">
+									<h5 class="spc-red text-h-2-5-2 mb-2 mt-4">About</h5>
+									<ul class="list-unstyled text-small footer-link ">
+											<li><a href="http://www.spc-ps.edu.hk/ " target="_blank ">Primary School</a></li>
+											<li><a href="http://www.spc.edu.hk/pta/ " target="_blank ">PTA</a></li>
+											<li><a href="http://www.alumni.org.hk/ " target="_blank ">Alumni</a></li>
+											<li><a href="http://www.spc-foundation.org.hk " target="_blank ">Foundation</a></li>
+									</ul>
+							</div>
+							<div class="col-6 col-md ">
+									<h5 class="spc-red text-h-2-5-2 mb-2 mt-4">Content</h5>
+									<ul class="list-unstyled text-small footer-link ">
+											<li><a href="content.php?id=42 ">Ordinances</a></li>
+											<li><a href="content.php?id=72 ">Tender</a></li>
+											<li><a href="content.php?id=41 ">Links</a></li>
+									</ul>
+							</div>
+							<div class="col-6 col-md ">
+								<h5 class="spc-red text-h-2-5-2 mb-2 mt-4">External Link</h5>
+								<ul class="list-unstyled text-small footer-link ">
+										<li><a href="#">Students’ Association</a></li>
+										<li><a href="#">Online Application</a></li>
+										<li><a href="#">SPC Sports</a></li>
+								</ul>
+						</div>
+					</div>
+			</footer>
+			<div class="container footer-box text-h-1-4-1  pb-2 ">
+					<!-- <div class="container d-flex justify-content-lg-between flex-lg-row flex-md-column flex-sm-column footer-box text-r-0-1-0 pb-2 "> -->
+					<p class="white ">Copyright © 2021 St. Paul's College. All rights reserved.</p>
+					<p> </p>
+					<!-- <p> <a href="# ">Privacy Policy</a> | <a href="# ">Terms & Conditions</a></p> -->
+			</div>
+	</div>
+	<!-- footer -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+	<script type="text/javascript" src="./dist/js/popper.min.js "></script>
+	<script type="text/javascript" src="./dist/js/bootstrap.min.js "></script>
+	<script src="./dist/js/jquery.jdSlider-latest.min.js"></script>
+	<!-- Swiper JS -->
+	<script src="./dist/js/swiper-bundle.min.js"></script>
+	<script src="./dist/js/aos.js"></script>
+	<script src="./dist/js/all.js"></script>
+	<script>
+	$(function() { 
+		//
+			// If a link has a dropdown, add sub menu toggle.
+			$('nav ul li a:not(:only-child)').click(function(e) {
+				$(this).siblings('.nav-dropdown').toggle();
+				// Close one dropdown when selecting another
+				$('.nav-dropdown').not($(this).siblings()).hide();
+				e.stopPropagation();
+			});
+			// Clicking away from dropdown will remove the dropdown class
+			$('html').click(function() {
+				$('.nav-dropdown').hide();
+			});
+			// Toggle open and close nav styles on click
+			$('#nav-toggle').click(function() {
+				$('nav ul').slideToggle();
+			});
+			// Hamburger to X toggle
+			$('#nav-toggle').on('click', function() {
+				this.classList.toggle('active');
+			});
+		//scroll
+		window.onscroll = function() {headerFixed()};
+	
+	var header = document.getElementById("headerFixed");
+	var sticky = header.offsetTop;
+	
+	function headerFixed() {
+		if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		} else {
+			header.classList.remove("sticky");
+		}
+	}
+	//   
+			$('.nav-link-red').on('click',function(e) {
+					e.preventDefault();
+					$(".side-categories").slideToggle();
+			});
+			//aos
+		AOS.init({
+			easing: 'ease-in-out-sine'
+		});
+		//
+	});
+	</script>
+</body>
+</html>
