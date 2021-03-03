@@ -1,5 +1,7 @@
 $(document).ready(function () {
 	//
+	$('.dropdown-toggle').dropdown()
+	//
 	var zindex = 10;
 
 	$("div.card").click(function (e) {

@@ -48,7 +48,7 @@
 </style>
 <body>
 	<!-- header -->
-	<header class="spc-top">
+	<!-- <header class="spc-top">
 		<ul class="container text-h-1-4-1 white">
 			<li><a href="#">School Intranet</a></li>
 			<li><a href="#">Learning Hub</a></li>
@@ -67,8 +67,8 @@
 				</form>
 			</li>
 		</ul>
-	</header>
-	<section class="navigation text-h-1-4-1" id="headerFixed" style="position: fixed;  width: -webkit-fill-available;font-size: 14px;">
+	</header> -->
+	<!-- <section class="navigation text-h-1-4-1" id="headerFixed" style="position: fixed;  width: -webkit-fill-available;font-size: 14px;">
 		<div class="nav-container">
 			<div class="brand">
 				<a href="/">
@@ -229,7 +229,73 @@
 				</ul>
 			</nav>
 		</div>
-	</section>
+	</section> -->
+	<!-- new nav -->
+	<nav class="navbar navbar-expand-xl navbar-dark sticky-top spc-top" id="headerFixed">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img class="spc-logo" src="./assets/img/spc-logo.png" alt="spc-logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<div class="collapse navbar-collapse" id="navbarsExample07">
+				<ul class="navbar-nav mr-auto dropdown">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About us</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="http://spc2021.vela.hk/principal_message.php?mid=1-16">Principal Message</a>
+							<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=7&mid=1-21">College Council</a>
+							<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=51&mid=1-101">SPC at a glance</a>
+							<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=59&mid=1-17">Motto, Mission and Goals</a>
+							<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=4&mid=1-18">College Badge</a>
+							<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=5&mid=1-19">College Hymn/ Song</a>
+							<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=166&mid=1-15">College History</a>
+							<a class="dropdown-item" href="http://archives.spc.edu.hk/main2.php" target="_blank">College Archives</a>
+							<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=65&mid=1-154">Plans and Reports</a>
+							<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=121&mid=1-174">College Facilities</a>
+							<a class="dropdown-item" href="/upload_files/editor_image/school_calendar_2020-2021.pdf" target="_blank">School Calendar</a>
+							<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=164&mid=1-211">News from St. Paul's</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+				</ul>
+				<form class=" " action=" ">
+					<input id="search-box" type="text" class="search-box" name="q" placeholder="Search" aria-label="Search">
+					<label for="search-box"><span class="search-icon">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</span></label>
+					<input type="submit" id="search-submit" />
+				</form>
+				<!-- <form class="form-inline my-2 my-md-0">
+					<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+				</form> -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+			</div>
+		</div>
+	</nav>
+	<!-- new nav -->
     <!-- header --> 
 	<section class="jd-slider slider2">
 		<!-- <h2>Infinite Loop</h2> -->
@@ -645,8 +711,9 @@
 	</div>
 	<!-- footer -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
-	<script type="text/javascript" src="./dist/js/popper.min.js "></script>
-	<script type="text/javascript" src="./dist/js/bootstrap.min.js "></script>
+	<script type="text/javascript" src="./dist/js/popper.min.js"></script>
+	<script type="text/javascript" src="./dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./dist/js/bootstrap.bundle.min.js"></script>
 	<script src="./dist/js/jquery.jdSlider-latest.min.js"></script>
 	<!-- Swiper JS -->
 	<script src="./dist/js/swiper-bundle.min.js"></script>
@@ -675,18 +742,18 @@
 				this.classList.toggle('active');
 			});
 		//scroll
-		window.onscroll = function() {headerFixed()};
-	
-	var header = document.getElementById("headerFixed");
-	var sticky = header.offsetTop;
-	
-	function headerFixed() {
-		if (window.pageYOffset > sticky) {
-			header.classList.add("sticky");
-		} else {
-			header.classList.remove("sticky");
-		}
-	}
+	// 	window.onscroll = function() {headerFixed()};
+	// 
+	// var header = document.getElementById("headerFixed");
+	// var sticky = header.offsetTop;
+	// 
+	// function headerFixed() {
+	// 	if (window.pageYOffset > sticky) {
+	// 		header.classList.add("sticky");
+	// 	} else {
+	// 		header.classList.remove("sticky");
+	// 	}
+	// }
 	//   
 			$('.nav-link-red').on('click',function(e) {
 					e.preventDefault();
