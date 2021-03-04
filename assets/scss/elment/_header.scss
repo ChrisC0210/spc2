@@ -1,0 +1,56 @@
+//spc header
+.spc-header{
+	background-color: $spc-blue;
+	height: 100%;
+//	
+	.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+	color: #fff;
+	background-color: $spc-blue;
+	border: solid 0px $gray-500;
+	border-radius: 0px;
+}
+
+.nav-pills .nav-link {
+	color: $white;
+	border-radius: 0px;
+	border: solid 0px $gray-500;
+	padding: 10px 20px;
+}
+
+.nav-item {
+	padding: 6px;
+
+	a {
+		color: $white;
+		text-decoration: none;
+		//background-color: $spc-blue-400;
+	}
+
+	&:hover,:active,:focus {
+		//background-color:$vela-green-600;
+		border-color: $spc-blue-600;
+		text-decoration: none;
+		background-color: $spc-blue-600;
+		border-radius: 0px;
+	}
+}
+.dropdown-item{
+	//background-color: #fff;
+	background-color: $spc-blue;
+  //border: 1px solid rgba(0,0,0,0.15);
+  border: 0px solid rgba(0,0,0,0.15);
+  //border-radius: .25rem;
+	border-radius: 0rem;
+	&:hover,:active {
+		//background-color:$vela-green-600;
+		border-color: $spc-blue-600;
+		text-decoration: none;
+		background-color: $spc-blue-600;
+		border-radius: 0px;
+	}
+}
+.dropdown-menu{
+  padding: 0px !important;
+}
+}
