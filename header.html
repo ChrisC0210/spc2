@@ -294,32 +294,189 @@
 	</nav> -->
 	<!-- new nav -->
 	<!-- nav -->
-	<nav class="navbar navbar-expand-lg navbar-dark  spc-header">
-		<a class="navbar-brand" href="#">Brand</a>
+	<nav class="navbar navbar-expand-lg navbar-dark  spc-header sticky-top" id="headerFixed">
+		<a class="navbar-brand" href="#">
+			<img class="spc-logo" src="./assets/img/spc-logo.png" alt="spc-logo">
+		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="main_nav">
 		<ul class="navbar-nav">
-			<li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
-			<li class="nav-item"><a class="nav-link" href="#"> About </a></li>
-			<li class="nav-item"><a class="nav-link" href="#"> Services </a></li>
+			<!-- <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li> -->
+			<!-- <li class="nav-item"><a class="nav-link" href="#"> About </a></li> -->
 			<li class="nav-item dropdown">
+				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">About us</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a class="dropdown-item" href="http://spc2021.vela.hk/principal_message.php?mid=1-16">Principal Message</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=7&mid=1-21">College Council</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=51&mid=1-101">SPC at a glance</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=59&mid=1-17">Motto, Mission and Goals</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=4&mid=1-18">College Badge</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=5&mid=1-19">College Hymn/ Song</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=166&mid=1-15">College History</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="http://archives.spc.edu.hk/main2.php" target="_blank">College Archives</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=65&mid=1-154">Plans and Reports</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=121&mid=1-174">College Facilities</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="/upload_files/editor_image/school_calendar_2020-2021.pdf" target="_blank">School Calendar</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="http://spc2021.vela.hk/content.php?id=164&mid=1-211">News from St. Paul's</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Admissions</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a class="dropdown-item" href="content.php?id=156&amp;mid=70-103" class="">Form 1 Admissions 中一入學申請</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="content.php?id=151&amp;mid=70-130" class="">Forms 2 and 3 Admissions 中二及中三入學申請</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="content.php?id=131&amp;mid=70-108" class="">School Fees 學費</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="content.php?id=168&amp;mid=70-105" class="">Fee Remission Scheme</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="content.php?id=169&amp;mid=70-215" class="">學費減免計劃</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="content.php?id=128&amp;mid=70-106" class="">Scholarships 獎學金</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="content.php?id=87&amp;mid=70-128" class="">Download  Page 下載</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="content.php?id=165&amp;mid=70-213" class="">Publications</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="content.php?id=172&amp;mid=70-221" class="">Student Welfare</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Staff </a>
+				<ul class="dropdown-menu">
+					<li>
+						<a class="dropdown-item" href="all_teacher.php?mid=3-26">All Teachers</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="content.php?id=115&amp;mid=3-170">Employment Opportunities</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Curriculum</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="content.php?id=48&amp;mid=4-165">Junior Secondary (Forms 1-3)</a></li>
+					<li><a class="dropdown-item" href="content.php?id=49&amp;mid=4-166">Senior Secondary (Forms 4-6)</a></li>
+					<li><a class="dropdown-item" href="content.php?id=152&amp;mid=4-203">IAL</a></li>
+					<li><a class="dropdown-item" href="content.php?id=35&amp;mid=4-39">Departments</a></li>
+					<li><a class="dropdown-item" href="content.php?id=159&amp;mid=4-209">Learning Hub</a></li>
+					<li><a class="dropdown-item" href="content.php?id=109&amp;mid=4-140">Academic Results</a></li>
+					<li><a class="dropdown-item" href="content.php?id=113&amp;mid=4-167-168">Other Programmes</a></li>
+				</ul>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Co-curriculum</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="content.php?id=39&amp;mid=72-79">Overview</a></li>
+					<li><a class="dropdown-item" href="content.php?id=174&amp;mid=72-141">Morning Assembly</a></li>
+					<li><a class="dropdown-item" href="content.php?id=71&amp;mid=72-80">Music</a></li>
+					<li><a class="dropdown-item" href="content.php?id=44&amp;mid=72-81">Sports</a></li>
+					<li><a class="dropdown-item" href="content.php?id=145&amp;mid=72-197">ALPS Programmes</a></li>
+					<li><a class="dropdown-item" href="https://sites.google.com/stpauls.edu.hk/spcsi/">SPC Academy</a></li>
+					<li><a class="dropdown-item" href="content.php?id=146&amp;mid=72-198">Activity Week</a></li>
+					<li><a class="dropdown-item" href="http://olespc.shutterfly.com/" target="_blank">Other Learning Experiences</a></li>
+					<li><a class="dropdown-item" href="content.php?id=23&amp;mid=72-88">Gifted Education</a></li>
+				</ul>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Global Classroom </a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="content.php?id=17&amp;mid=6-46">Tours</a></li>
+					<li><a class="dropdown-item" href="tour_archive.php?mid=6-47">Archive</a></li>
+					<li><a class="dropdown-item" href="content.php?id=40&amp;mid=6-30">Teacher Visits</a></li>
+					<li><a class="dropdown-item" href="content.php?id=24&amp;mid=6-48">Linked Schools</a></li>
+					<li><a class="dropdown-item" href="content.php?id=80&amp;mid=6-123">Assembly Presentations</a></li>
+					</ul>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Students</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="content.php?id=120&amp;mid=8-86">Student Support</a></li>
+					<li><a class="dropdown-item" href="content.php?id=25&amp;mid=8-55">The Students' Association</a></li>
+					<li><a class="dropdown-item" href="content.php?id=28&amp;mid=8-56">Prefects' Council</a></li>
+					<li><a class="dropdown-item" href="content.php?id=31&amp;mid=8-57">House System</a></li>
+					<li><a class="dropdown-item" href="content.php?id=137&amp;mid=8-124">Careers and Life Planning</a></li>
+					<li><a class="dropdown-item" href="content.php?id=47&amp;mid=8-208">University Honours</a></li>
+					<li><a class="dropdown-item" href="content.php?id=82&amp;mid=8-126">Destinations of our graduates</a></li>
+					<li><a class="dropdown-item" href="content.php?id=172&amp;mid=8-220">Student Welfare</a></li>
+					</ul>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">SPC Family</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="http://www.spc-ps.edu.hk/" target="_blank">Primary School</a></li>
+					<li><a class="dropdown-item" href="http://www.spc.edu.hk/pta/" target="_blank">Parent-Teacher Association</a></li>
+					<li><a class="dropdown-item" href="http://www.alumni.org.hk/" target="_blank">St. Paul's College Alumni Association</a></li>
+					<li><a class="dropdown-item" href="http://www.spcalumni.com/" target="_blank">St. Paul's College Alumni Association (Ontario)</a></li>
+					<li><a class="dropdown-item" href="http://www.spc-foundation.org.hk" target="_blank">Foundation</a></li>
+					<li><a class="dropdown-item" href="https://www.facebook.com/10th-Hong-Kong-Group-162053538538/" target="_blank">Scout Association of HK 10th Hong Kong Group</a></li>
+					<li><a class="dropdown-item" href="https://www.spc-connect.net/" target="_blank">Membership in the SPC Community</a></li>
+					</ul>
+			</li>
+
+			<!-- <li class="nav-item dropdown">
 				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">  Hover me  </a>
 					<ul class="dropdown-menu">
 					<li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
 					<li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
 					<li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
 					</ul>
-			</li>
+			</li> -->
 		</ul>
 		<ul class="navbar-nav ml-auto">
-			<li class="nav-item"><a class="nav-link" href="#"> Search </a></li>
+			<li class="nav-item">
+				<a class="nav-link openBtn" onclick="openSearch()" href="#"  id="addClass">
+				<span class="search-icon">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</span>
+			</a></li>
 			<li class="nav-item dropdown">
-				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Dropdown right </a>
+				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Links </a>
 					<ul class="dropdown-menu dropdown-menu-right">
-					<li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
-					<li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+						<li><a class="dropdown-item" href="#">School Intranet</a></li>
+						<li><a class="dropdown-item" href="#">Learning Hub</a></li>
+						<li><a class="dropdown-item" href="#">OLE</a></li>
+						<li><a class="dropdown-item" href="#">SPC Academy</a></li>
+						<li><a class="dropdown-item" href="#">Sports Record System</a></li>
+						<li><a class="dropdown-item" href="#">Library</a></li>
+						<li><a class="dropdown-item" href="#">Sitemap</a></li>
 					</ul>
 			</li>
 		</ul>
@@ -346,7 +503,17 @@
 		<!-- link -->
 
 	</section>
-
+<!-- serach box -->
+<div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+  <div class="overlay-content">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<!-- search box -->
 <!-- test -->
 <div class="container-fluid d-md-flex flex-md-equal" style="background-color: #f8f9fa;">
 	<div class="col-lg-6 col-md-12 mr-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden " >
@@ -762,5 +929,14 @@
 		//
 	});
 	</script>
+	<script>
+		function openSearch() {
+			document.getElementById("myOverlay").style.display = "block";
+		}
+		
+		function closeSearch() {
+			document.getElementById("myOverlay").style.display = "none";
+		}
+		</script>
 </body>
 </html>

@@ -12888,81 +12888,6 @@ footer {
   color: #fefefe;
 }
 
-.search-box {
-  -webkit-transition: width 0.6s, border-radius 0.6s, background 0.6s, -webkit-box-shadow 0.6s;
-  transition: width 0.6s, border-radius 0.6s, background 0.6s, -webkit-box-shadow 0.6s;
-  transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
-  transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s, -webkit-box-shadow 0.6s;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  border: none;
-  cursor: pointer;
-  background: #ebebeb;
-  background: #274778;
-}
-
-.search-box + label .search-icon {
-  color: black;
-}
-
-.search-box + label .search-icon {
-  color: #fefefe;
-}
-
-.search-box:hover {
-  color: white;
-  background: #c8c8c8;
-  background: #274778;
-  -webkit-box-shadow: 0 0 0 5px #3d4752;
-          box-shadow: 0 0 0 5px #3d4752;
-  -webkit-box-shadow: 0 0 0 5px #18345F;
-          box-shadow: 0 0 0 5px #18345F;
-}
-
-.search-box:hover + label .search-icon {
-  color: white;
-}
-
-.search-box:hover + label .search-icon {
-  color: black;
-}
-
-.search-box:focus {
-  -webkit-transition: width 0.6s cubic-bezier(0, 1.22, 0.66, 1.39), border-radius 0.6s, background 0.6s;
-  transition: width 0.6s cubic-bezier(0, 1.22, 0.66, 1.39), border-radius 0.6s, background 0.6s;
-  border: none;
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  padding-left: 15px;
-  cursor: text;
-  width: 300px;
-  border-radius: auto;
-  background: #ebebeb;
-  color: black;
-}
-
-.search-box:focus + label .search-icon {
-  color: black;
-}
-
-.search-box:not(:focus) {
-  text-indent: -5000px;
-}
-
-#search-submit {
-  position: relative;
-  left: -5000px;
-}
-
-.search-icon {
-  position: relative;
-  left: -30px;
-  color: white;
-  cursor: pointer;
-}
-
 .breadcrumb-box {
   padding-top: 100px;
 }
@@ -12974,8 +12899,26 @@ footer {
 }
 
 .spc-header {
-  background-color: #274778;
+  background-color: #18345F;
   height: 100%;
+  color: #fefefe;
+}
+
+@media screen and (max-width: 800px) {
+  .spc-header {
+    overflow: scroll;
+  }
+}
+
+.spc-header::after {
+  content: "";
+  background-color: #96172E;
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .spc-header .nav-pills .nav-link.active,
@@ -13024,6 +12967,94 @@ footer {
 
 .spc-header .dropdown-menu {
   padding: 0px !important;
+}
+
+@media screen and (max-width: 798px) {
+  .spc-header .dropdown-menu {
+    position: absolute;
+    top: 80px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .spc-header .dropdown-menu {
+    position: initial;
+    top: 0px;
+  }
+}
+
+.spc-header .nav-link.active:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.openBtn {
+  background: #f1f1f1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999999;
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
 }
 
 .breadcrumb {
