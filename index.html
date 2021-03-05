@@ -34,22 +34,26 @@
 .swiper-container-2 {
       width: 100%;
 			height: 85vh;
+			/* height: 600px; */
+      background-position: bottom;
+			background-size: contain;
+			object-fit: scale-down;
     }
 
     .swiper-slide-2 {
       text-align: center;
       font-size: 18px;
 			background: #fff;
-      background-position: center;
-			background-size: cover;
-			object-fit: cover;
+      background-position: bottom;
+			background-size: contain;
+			object-fit: scale-down;
 			}
 			
 </style>
 <body>
 	<!-- header -->
 	<!-- nav -->
-	<nav class="navbar navbar-expand-lg navbar-dark  spc-header sticky-top text-h-2-4-2" id="headerFixed">
+	<nav class="navbar navbar-expand-lg navbar-dark  spc-header sticky-top" id="headerFixed">
 		<a class="navbar-brand" href="#">
 			<img class="spc-logo" src="./assets/img/spc-logo.png" alt="spc-logo">
 		</a>
@@ -225,13 +229,14 @@
 			<li class="nav-item dropdown">
 				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Links </a>
 					<ul class="dropdown-menu dropdown-menu-right">
-						<li><a class="dropdown-item" href="#">School Intranet</a></li>
-						<li><a class="dropdown-item" href="#">Learning Hub</a></li>
-						<li><a class="dropdown-item" href="#">OLE</a></li>
-						<li><a class="dropdown-item" href="#">SPC Academy</a></li>
-						<li><a class="dropdown-item" href="#">Sports Record System</a></li>
-						<li><a class="dropdown-item" href="#">Library</a></li>
-						<li><a class="dropdown-item" href="#">Sitemap</a></li>
+						<li><a class="dropdown-item" target="_blank" href="http://eclass.stpaulscollege.edu.hk/templates/login.customized.php">School Intranet</a></li>
+						<li><a class="dropdown-item" target="_blank" href="http://www.spc.edu.hk/content.php?id=159&mid=4-209">Learning Hub</a></li>
+						<li><a class="dropdown-item" target="_blank" href="https://olespc.shutterfly.com/">OLE</a></li>
+						<li><a class="dropdown-item" target="_blank" href="https://sites.google.com/stpauls.edu.hk/spcsi/">SPC Academy</a></li>
+						<li><a class="dropdown-item" target="_blank" href="http://app.spc.edu.hk/pe/">Sports Record System</a></li>
+						<li><a class="dropdown-item" target="_blank" href="http://library.spc.edu.hk/Pages/Index.aspx">Library</a></li>
+						<li><a class="dropdown-item" target="_blank" href="http://www.spc.edu.hk/sitemap.php?sid=46">Sitemap</a></li>
+						<li><a class="dropdown-item" target="_blank" href="http://www.spc.edu.hk/content.php?id=63&sid=45">Contact Us</a></li>
 					</ul>
 			</li>
 		</ul>
@@ -271,6 +276,12 @@
 <!-- Swiper -->
 			<div class="swiper-container swiper-container-2">
 				<div class="swiper-wrapper">
+					<div class="swiper-slide swiper-slide-2"  data-swiper-autoplay="5000">
+						<video controls muted loop>
+							<source src="./assets/img/spc-video-sand.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+						</video>
+					</div>
 					<div class="swiper-slide swiper-slide-2">
 						<video controls muted loop>
 							<source src="./assets/img/spc-video-1.mp4" type="video/mp4">
@@ -289,9 +300,9 @@
 								Your browser does not support the video tag.
 						</video>
 					</div>
-					<div class="swiper-slide swiper-slide-2">
+					<!-- <div class="swiper-slide swiper-slide-2">
 						<img src="./assets/img/IMG_1339.JPG" alt="">
-					</div>
+					</div> -->
 				</div>
 				<!-- Add Pagination -->
 						<div class="swiper-pagination"></div>
