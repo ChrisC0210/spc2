@@ -213,3 +213,39 @@
   fill:$spc-red;
   stroke: $spc-red;
 }
+//gra-box
+.gra-box{
+	object-fit: scale-down;
+	background-position: center;
+	background-size: cover;
+	height: 900px;
+	width: 100%;
+	.gra-hat>img{
+		width: 100px;
+		z-index:99;
+		transform: translate(20px, 60%);
+		@media screen and (max-width: 798px) {
+			width: 40px;
+		}
+	}
+}
+//back to top
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: $spc-blue;
+  color: $white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: $spc-blue-600;
+}

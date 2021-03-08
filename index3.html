@@ -32,9 +32,9 @@
   padding-top: 102px;
 }
 .swiper-container-2 {
-	width: 100%;
-	/* height: 100%; */
-	max-height: 700px;
+	max-width: 100%;
+  height: 90%;
+	object-fit: scale-down;
 	}
 
     .swiper-slide-2 {
@@ -44,8 +44,13 @@
       /* background-position: bottom; */
 			/* background-size: contain; */
 			object-fit: scale-down;
-			background-position: center;
-      background-size: cover;
+			/* background-position: center;
+			background-size: cover; */
+			background-position: left;
+			background-size: scale-down !important;
+			}
+			.swiper-slide-2>video{
+				max-width: 100%;
 			}
 			.spc-img{
 			width: 100%;
@@ -62,7 +67,7 @@
 <body>
 	<!-- header -->
 	<!-- nav -->
-	<nav class="navbar navbar-expand-lg navbar-dark  spc-header sticky-top" id="headerFixed">
+	<nav class="navbar navbar-expand-lg navbar-dark spc-header sticky-top text-h-2-4-2" id="headerFixed">
 		<a class="navbar-brand" href="#">
 			<img class="spc-logo" src="./assets/img/spc-logo.png" alt="spc-logo">
 		</a>
@@ -255,6 +260,9 @@
 		</div> <!-- navbar-collapse.// -->
 	</nav>
 	<!-- nav -->
+	<button class="text-h-1-4-1" onclick="topFunction()" id="myBtn" title="Go to top">
+		<i class="fa fa-chevron-up" aria-hidden="true"></i>
+	</button>
     <!-- header --> 
 	<section class="jd-slider slider2">
 		<!-- <h2>Infinite Loop</h2> -->
@@ -288,20 +296,20 @@
 <!-- Swiper -->
 			<div class="swiper-container swiper-container-2">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide swiper-slide-2">
-						<video>
-							<source src="./assets/img/spc-video-sand.mp4" type="video/mp4">
+					<div class="swiper-slide swiper-slide-2" data-swiper-autoplay="6000">
+						<video controls muted loop>
+							<source src="./assets/img/spc-video-sand2.mp4" type="video/mp4">
 								Your browser does not support the video tag.
 						</video>
 					</div>
-					<div class="swiper-slide swiper-slide-2">
-						<video>
-							<source src="./assets/img/spc-video-1.mp4" type="video/mp4">
+					<div class="swiper-slide swiper-slide-2" data-swiper-autoplay="5000">
+						<video controls muted loop>
+							<source src="./assets/img/spc-videp-table.mp4" type="video/mp4">
 								Your browser does not support the video tag.
 						</video>
 					</div>
-					<div class="swiper-slide swiper-slide-2">
-						<video>
+					<div class="swiper-slide swiper-slide-2" data-swiper-autoplay="5000">
+						<video controls muted loop>
 							<source src="./assets/img/spc-video-2.mp4" type="video/mp4">
 								Your browser does not support the video tag.
 						</video>
@@ -321,8 +329,8 @@
 					</div>
 
 	<!-- left -->
-	<section class="d-flex justify-content-center col-12 mt-4" style="margin-bottom: 100px;">
-		<div class="row featurette">
+	<section class="d-flex justify-content-center mt-4" style="margin-bottom: 100px;">
+		<div class="container row featurette">
 			<div class="col-md-6 col-sm-12 bg-gray border-top border-left border-red spc-box box-left">
 				<div class="featurette-heading mt-4 mb-2 spc-blue text-f-7-7-7">
 					<img src="./assets/icon/spc-logo-sm.png" alt="spc-logo">
@@ -345,8 +353,8 @@
 		</div>
 	</section>
 	<!-- right -->
-	<section class="col-12 mt-4" style="margin-bottom: 100px;">
-		<div class="row featurette">
+	<section class="d-flex justify-content-center mt-4" style="margin-bottom: 100px;">
+		<div class="container row featurette">
 			<div class="col-md-6 col-sm-12 spc-img aos-item" data-aos="fade-right">
 				<img src="./assets/img/spc-200114.jpg" alt="">
 				<!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
@@ -359,6 +367,7 @@
 				<!-- <div class="text-f-5-7-5 spc-blue">04-NOVEMBER-2020</div> -->
 				<p class="lead mb-4 text-h-2-4-2">
 					The offering to Chinese youths of a modern, liberal education in the English language (but including the subject of Chinese language in the curriculum) upon Christian principles, Protestant and Evangelical, as professed by the Sheng Kung Hui.
+					</p>
 					<div class="mt-4 mb-2 text-h-2-4-2">
 					<a class="spc-btn-1 cta-red" href="http://www.spc.edu.hk/principal_message.php?mid=1-16" target="_blank">
 						Read More
@@ -369,8 +378,8 @@
 		</div>
 	</section>
 	<!-- left -->
-	<section class="d-flex justify-content-center col-12 mt-4" style="margin-bottom: 100px;">
-		<div class="row featurette">
+	<section class="d-flex justify-content-center mt-4" style="margin-bottom: 100px;">
+		<div class="container row featurette">
 			<div class="col-md-6 col-sm-12 bg-gray border-top border-left border-red spc-box box-left">
 				<div class="featurette-heading mt-4 mb-2 spc-blue text-f-7-7-7">
 					<img src="./assets/icon/spc-logo-sm.png" alt="spc-logo">
@@ -378,6 +387,7 @@
 				</div>
 				<p class="lead mb-4 text-h-2-4-2">
 					Come and see Stuartholme in Action and meet the Principal and Leadership Team.
+					</p>
 				<div class="mt-4 mb-2 text-h-2-4-2">
 					<a class="spc-btn-1 cta-red" href="http://www.spc.edu.hk/principal_message.php?mid=1-16" target="_blank">
 						Register Now
@@ -392,8 +402,8 @@
 		</div>
 	</section>
 	<!-- Principal msg -->
-	<section class="col-12 d-flex justify-content-center mt-4">
-		<div class="row featurette">
+	<section class="d-flex justify-content-center mt-4" data-aos="zoom-in">
+		<div class="container row featurette">
 			<div class="col-md-6 spc-img">
 				<img src="./assets/img/spc-principal.png" alt="">
 				<!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
@@ -417,23 +427,12 @@
 		</div>
 	</section>
 	<!-- graduation msg -->
-	<section class="col-12 mt-4" 
-	style="
-			object-fit: scale-down;
-			background-position: center;
-			background-size: cover;
-			height: 900px;
-	width: 100%;
-	background-image:url(./assets/img/01_nelson_kei.jpg)"
-	>
-			<div class="container d-flex justify-content-center">
-			<img src="./assets/img/gra-hat.png" 
-			style="width: 100px;
-			z-index:99;transform: translate(20px, 60%);"
-			alt="">
+	<section class="col-12 mt-4 gra-box" style="background-image:url(./assets/img/01_nelson_kei.jpg)">
+			<div class="container d-flex justify-content-center gra-hat">
+			<img src="./assets/img/gra-hat.png" alt="gra-hat">
 		</div>
 	<div class="col-12" data-aos="fade-up">
-		<div class="jumbotron" style="opacity: 0.7">
+		<div class="container jumbotron" style="opacity: 0.7">
 			<div class="container">
 				<p>AT St. Paul’s College</p>
 				<h4 class="spc-blue text-f-7-7-7 ">WE PROVIDE OPPORTUNITIES TO SUCCEED</h4>
@@ -651,7 +650,7 @@
 		<div  class="container">
 			<div class="row d-flex justify-content-center">
 				<!-- <div class="row d-flex justify-content-center" style="transform: translate(0px, 20%);"> -->
-				<h2 class="col-3 text-f-8-7-8 white text-center" style="z-index:22; background-color:#18345F; padding: 10px 40px">News</h2>
+				<h2 class="col-12 text-f-8-7-8 white text-center" style="z-index:22; background-color:#18345F; padding: 10px 40px">News</h2>
 				<!-- <h2 class="text-f-8-7-8 white text-center spc-line">News</h2> -->
 				<p class="col-12 mt-4 text-h-2-4-2 white text-center">We’re a school that celebrates giving your all to everything.</p>
 				<div class="col-12 ">
@@ -839,6 +838,11 @@
 		function closeSearch() {
 			document.getElementById("myOverlay").style.display = "none";
 		}
+		// back to top
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}	
 		</script>
 </body>
 </html>
