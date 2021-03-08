@@ -231,9 +231,11 @@ $(document).ready(function () {
 		//
 var swiper = new Swiper('.swiper-container-2', {
 	loop: true,
-	autoplay: {
-		delay: 5000,
-	},
+	// autoplay: {
+	// 	delay: 5000,
+	// 	true
+	// },
+	autoplay: true,
 	effect: 'fade',
 	freeMode: true,
   pagination: {

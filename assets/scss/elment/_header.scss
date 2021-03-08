@@ -158,3 +158,58 @@
 .overlay button:hover {
   background: #bbb;
 }
+//right nav a
+//nav-link
+.nav-link-right{
+	.nav-link{
+		padding: 10px 10px;
+		background-color: $spc-red !important;
+		border-radius: 4px;
+		@media screen and (max-width: 798px) {
+			background-color: $spc-blue-600 !important;
+			padding: 0px;
+			//margin-bottom: 50px;
+		}
+	}
+
+	.dropdown-toggle::after{
+		display: none;
+		@media screen and (max-width: 798px) {
+			display: inline-block;
+		}
+	}
+
+}
+
+//  border-left: 1px solid #dee2e6 !important;
+.spc-box{
+	box-shadow: 0px 3px 6px #00000029;
+	-webkit-box-shadow: 0px 3px 6px #00000029;
+	// ::after{
+	// 	content: " ";
+	// 	border-left: 2px solid #3a434d !important;
+	// 	margin-left: 2px;
+	// }
+}
+.box-left{
+	transform: translate(80px, 5%);
+	z-index: 9;
+	@media screen and (max-width: 798px) {
+		transform: translate(0px, 0px);
+	}
+}
+.box-right{
+	transform: translate(-40px, 20px);
+	z-index: 9;
+	@media screen and (max-width: 798px) {
+		transform: translate(0px, 0px);
+	}
+}
+.border-red {
+	border-color:$spc-red !important;
+}
+//read more
+.cta-red svg {
+  fill:$spc-red;
+  stroke: $spc-red;
+}

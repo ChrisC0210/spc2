@@ -13057,6 +13057,69 @@ footer {
   background: #bbb;
 }
 
+.nav-link-right .nav-link {
+  padding: 10px 10px;
+  background-color: #96172E !important;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 798px) {
+  .nav-link-right .nav-link {
+    background-color: #18345F !important;
+    padding: 0px;
+  }
+}
+
+.nav-link-right .dropdown-toggle::after {
+  display: none;
+}
+
+@media screen and (max-width: 798px) {
+  .nav-link-right .dropdown-toggle::after {
+    display: inline-block;
+  }
+}
+
+.spc-box {
+  box-shadow: 0px 3px 6px #00000029;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+}
+
+.box-left {
+  -webkit-transform: translate(80px, 5%);
+          transform: translate(80px, 5%);
+  z-index: 9;
+}
+
+@media screen and (max-width: 798px) {
+  .box-left {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+.box-right {
+  -webkit-transform: translate(-40px, 20px);
+          transform: translate(-40px, 20px);
+  z-index: 9;
+}
+
+@media screen and (max-width: 798px) {
+  .box-right {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+.border-red {
+  border-color: #96172E !important;
+}
+
+.cta-red svg {
+  fill: #96172E;
+  stroke: #96172E;
+}
+
 .breadcrumb {
   background-color: #fefefe;
   padding: .75rem 0rem;

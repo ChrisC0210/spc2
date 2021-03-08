@@ -32,20 +32,32 @@
   padding-top: 102px;
 }
 .swiper-container-2 {
-      min-width: 100%;
-			height: 85vh;
-			/* height: 600px; */
-    }
+	width: 100%;
+	/* height: 100%; */
+	max-height: 700px;
+	}
 
     .swiper-slide-2 {
       text-align: center;
       font-size: 18px;
 			background: #fff;
-      background-position: bottom;
-			background-size: contain;
+      /* background-position: bottom; */
+			/* background-size: contain; */
 			object-fit: scale-down;
+			background-position: center;
+      background-size: cover;
 			}
-			
+			.spc-img{
+			width: 100%;
+			max-height: 500px;
+			overflow: hidden;
+			}
+			.spc-img >img{
+			background-position: center;
+			object-fit: scale-down;
+			width: 100%;
+			max-height: 600px;
+			}
 </style>
 <body>
 	<!-- header -->
@@ -62,7 +74,7 @@
 			<!-- <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li> -->
 			<!-- <li class="nav-item"><a class="nav-link" href="#"> About </a></li> -->
 			<li class="nav-item dropdown">
-				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">About us</a>
+				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">About</a>
 				<ul class="dropdown-menu">
 					<li>
 						<a class="dropdown-item" href="http://spc2021.vela.hk/principal_message.php?mid=1-16">Principal Message</a>
@@ -135,7 +147,7 @@
 				</ul>
 			</li>
 			<li class="nav-item dropdown">
-				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Staff </a>
+				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Community</a>
 				<ul class="dropdown-menu">
 					<li>
 						<a class="dropdown-item" href="all_teacher.php?mid=3-26">All Teachers</a>
@@ -146,7 +158,7 @@
 				</ul>
 			</li>
 			<li class="nav-item dropdown">
-				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Curriculum</a>
+				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Boarding</a>
 				<ul class="dropdown-menu">
 					<li><a class="dropdown-item" href="content.php?id=48&amp;mid=4-165">Junior Secondary (Forms 1-3)</a></li>
 					<li><a class="dropdown-item" href="content.php?id=49&amp;mid=4-166">Senior Secondary (Forms 4-6)</a></li>
@@ -158,7 +170,7 @@
 				</ul>
 			</li>
 			<li class="nav-item dropdown">
-				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Co-curriculum</a>
+				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Schools</a>
 				<ul class="dropdown-menu">
 					<li><a class="dropdown-item" href="content.php?id=39&amp;mid=72-79">Overview</a></li>
 					<li><a class="dropdown-item" href="content.php?id=174&amp;mid=72-141">Morning Assembly</a></li>
@@ -276,30 +288,30 @@
 <!-- Swiper -->
 			<div class="swiper-container swiper-container-2">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide swiper-slide-2"  data-swiper-autoplay="5000">
-						<video controls muted loop>
+					<div class="swiper-slide swiper-slide-2">
+						<video>
 							<source src="./assets/img/spc-video-sand.mp4" type="video/mp4">
 								Your browser does not support the video tag.
 						</video>
 					</div>
 					<div class="swiper-slide swiper-slide-2">
-						<video controls muted loop>
+						<video>
 							<source src="./assets/img/spc-video-1.mp4" type="video/mp4">
 								Your browser does not support the video tag.
 						</video>
 					</div>
-					<div class="swiper-slide swiper-slide-2"  data-swiper-autoplay="5000">
-						<video controls muted loop>
+					<div class="swiper-slide swiper-slide-2">
+						<video>
 							<source src="./assets/img/spc-video-2.mp4" type="video/mp4">
 								Your browser does not support the video tag.
 						</video>
 					</div>
-					<div class="swiper-slide swiper-slide-2"  data-swiper-autoplay="5000">
+					<!-- <div class="swiper-slide swiper-slide-2"  data-swiper-autoplay="5000">
 						<video controls muted loop>
 							<source src="./assets/img/spc-video-3.mp4" type="video/mp4">
 								Your browser does not support the video tag.
 						</video>
-					</div>
+					</div> -->
 					<!-- <div class="swiper-slide swiper-slide-2">
 						<img src="./assets/img/IMG_1339.JPG" alt="">
 					</div> -->
@@ -307,154 +319,142 @@
 				<!-- Add Pagination -->
 						<div class="swiper-pagination"></div>
 					</div>
-<!-- test -->
-<div class="container-fluid d-md-flex flex-md-equal" style="background-color: #f8f9fa;">
-  <div class="col-lg-6 col-md-12 d-flex justify-content-center overflow-hidden mr-lg-3 aos-item" data-aos="fade-up">
-		<img class=" " src="./assets/img/banner-1.jpg" alt="">
-  </div>
-	<div class="col-lg-6 col-md-12 mr-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden"
-	style="background-color: #18345F; background-image: url('./assets/img/spc-bg.png'); transform: translate(0px, -10%); z-index: 99;min-height: 800px; opacity: 0.95;">
-    <div class=" ">
-      <h2 class="text-f-8-7-8 white mb-4 text-lg-left text-sm-center" style="z-index:22;">Overview</h2>
-      <p class="lead white text-h-2-4-2">
-				In addition to developing students’ intellectual capabilities, the College also aims at fostering the development of the whole person. Extra-curricular activities play an integral role in students’ lives and every opportunity is provided to extend students’ potential.
-			</p>
-			<div class="mt-4 mb-4">
-				<a href="#" class="btn spc-btn-3 align-content-center text-h-2-4-2 text-center">Read More</a>
+
+	<!-- left -->
+	<section class="d-flex justify-content-center col-12 mt-4" style="margin-bottom: 100px;">
+		<div class="row featurette">
+			<div class="col-md-6 col-sm-12 bg-gray border-top border-left border-red spc-box box-left">
+				<div class="featurette-heading mt-4 mb-2 spc-blue text-f-7-7-7">
+					<img src="./assets/icon/spc-logo-sm.png" alt="spc-logo">
+					Overview
+				</div>
+				<p class="lead mb-4 text-h-2-4-2">
+					In addition to developing students’ intellectual capabilities, the College also aims at fostering the development of the whole person. Extra-curricular activities play an integral role in students’ lives and every opportunity is provided to extend students’ potential.				</p>
+
+				<div class="mt-4 mb-2 text-h-2-4-2">
+					<a class="spc-btn-1 cta-red" href="http://www.spc.edu.hk/principal_message.php?mid=1-16" target="_blank">
+						Read More
+						<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path></svg>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12 spc-img aos-item" data-aos="fade-left">
+				<img src="./assets/img/banner-1.jpg" alt="">
+				<!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
 			</div>
 		</div>
-    <!-- <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
-	</div>
-	
-</div>
-<!-- test -->
-<!-- test -->
-<div class="container-fluid d-md-flex flex-md-equal" style="background-color: #f8f9fa;">
-	<div class="col-lg-6 col-md-12 mr-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden " >
-    <div class="my-3 p-3 col-lg-12 col-md-12">
-			<h2 class="text-f-8-7-8 white" style="z-index:22; background-color:#18345F; padding: 10px 40px">Events</h2>
-			<div class="shadow p-3 rounded" style="background-color: #fff;">
-				<h4 class="lead text-f-4-5-4 spc-red mb-4">
-					04-NOVEMBER-2020
-				</h4>
-				<p class="text-f-2-5-2 spc-blue mb-2">
-					Talk for Form 3 Parents/Guardians and Students on the Choice of Subjects at Senior Secondary Level
-				</p>
-				<p class="gray-800 text-h-2-4-2">
-					Time: 5:45 p.m. - 7:30 p.m.
-				</p>
-				<p class="gray-800 text-h-2-4-2">
-					Venue: Hall and Balcony
-				</p>
-				<div class="mb-4 mt-4">
-					<a href="event-list.html" target="_blank" class="btn spc-btn-3 col-lg-12 col-sm-12 align-content-center text-h-2-4-2 text-center">Read More</a>
+	</section>
+	<!-- right -->
+	<section class="col-12 mt-4" style="margin-bottom: 100px;">
+		<div class="row featurette">
+			<div class="col-md-6 col-sm-12 spc-img aos-item" data-aos="fade-right">
+				<img src="./assets/img/spc-200114.jpg" alt="">
+				<!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+			</div>
+			<div class="col-md-6 col-sm-12 bg-gray border-top border-right border-red spc-box box-right">
+				<div class="featurette-heading mt-4 mb-2 spc-blue text-f-7-7-7">
+					<img src="./assets/icon/spc-logo-sm.png" alt="spc-logo">
+					Mission And Goals
+				</div>
+				<!-- <div class="text-f-5-7-5 spc-blue">04-NOVEMBER-2020</div> -->
+				<p class="lead mb-4 text-h-2-4-2">
+					The offering to Chinese youths of a modern, liberal education in the English language (but including the subject of Chinese language in the curriculum) upon Christian principles, Protestant and Evangelical, as professed by the Sheng Kung Hui.
+					<div class="mt-4 mb-2 text-h-2-4-2">
+					<a class="spc-btn-1 cta-red" href="http://www.spc.edu.hk/principal_message.php?mid=1-16" target="_blank">
+						Read More
+						<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path></svg>
+					</a>
 				</div>
 			</div>
 		</div>
-    <!-- <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
-	</div>
-	<div class="col-lg-6 col-md-12 overflow-hidden mr-lg-4 mr-0 aos-item" data-aos="fade-left"
-	style="z-index: 99; position: absolutex; top: 80px;"
+	</section>
+	<!-- left -->
+	<section class="d-flex justify-content-center col-12 mt-4" style="margin-bottom: 100px;">
+		<div class="row featurette">
+			<div class="col-md-6 col-sm-12 bg-gray border-top border-left border-red spc-box box-left">
+				<div class="featurette-heading mt-4 mb-2 spc-blue text-f-7-7-7">
+					<img src="./assets/icon/spc-logo-sm.png" alt="spc-logo">
+					Book a Tour
+				</div>
+				<p class="lead mb-4 text-h-2-4-2">
+					Come and see Stuartholme in Action and meet the Principal and Leadership Team.
+				<div class="mt-4 mb-2 text-h-2-4-2">
+					<a class="spc-btn-1 cta-red" href="http://www.spc.edu.hk/principal_message.php?mid=1-16" target="_blank">
+						Register Now
+						<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path></svg>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12 spc-img aos-item" data-aos="fade-left">
+				<img src="./assets/img/spc-PrimarySchool.jpeg" alt="">
+				<!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+			</div>
+		</div>
+	</section>
+	<!-- Principal msg -->
+	<section class="col-12 d-flex justify-content-center mt-4">
+		<div class="row featurette">
+			<div class="col-md-6 spc-img">
+				<img src="./assets/img/spc-principal.png" alt="">
+				<!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+			</div>
+			<div class="col-md-6">
+				<h4 class="featurette-heading mt-4 mb-2 spc-blue text-h-4-5-4">
+					<img src="./assets/icon/spc-logo-sm.png" alt="spc-logo">
+					Principal’s Message
+					</h4>
+				<p class="lead mb-4 text-h-2-4-2">
+					St. Paul’s College is distinctively different from other schools in Hong Kong because we are steeped in tradition.  We are proud to say that the history of St. Paul’s is just as old if not older than the history of colonial Hong Kong, and the prospective students are the continuation of this tradition.
+				</p>
+				<p class="mt-4 mb-2 spc-blue text-h-2-4-2">Mr. Dennis Yuen - Principal 
+				</p>
+				<div class="mt-4 mb-2 text-h-2-4-2">
+					<a class="spc-btn-1 cta-red" href="http://www.spc.edu.hk/principal_message.php?mid=1-16" target="_blank">Meet Our Principal 
+						<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- graduation msg -->
+	<section class="col-12 mt-4" 
+	style="
+			object-fit: scale-down;
+			background-position: center;
+			background-size: cover;
+			height: 900px;
+	width: 100%;
+	background-image:url(./assets/img/01_nelson_kei.jpg)"
 	>
-		<img class=" " src="./assets/img/IMG_1336.JPG" alt=""
-		style="min-height:700px; width: 100%; object-fit: cover;"
-		>
-  </div>
-	
-</div>
-<!-- test -->
-	<section style="background-color: #18345F;opacity: 0.97;">
-		<div  class="container">
-			<div class="row d-flex justify-content-center" style="transform: translate(0px, 20%);">
-				<h2 class="col-3 text-f-8-7-8 white text-center" style="z-index:22; background-color:#18345F; padding: 10px 40px">News</h2>
-				<!-- <h2 class="text-f-8-7-8 white text-center spc-line">News</h2> -->
-				<p class="col-12 mt-4 text-h-3-4-3 white text-center">We’re a school that celebrates giving your all to everything.</p>
-				<div class="col-12 ">
-					<!-- Swiper -->
-							<div class="swiper-container swiper-container-1 mb-4">
-								<div class="swiper-wrapper mb-4">
-										<div class="swiper-slide swiper-slide-1" style="background-image:url(./assets/img/banner-3.jpg)">
-											<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
-												Nelson Kei (Class of 2016) wins United College Ming De Scholarship 2020
-											</div>
-											<div class="swiper-content swiper-content-1 text-f-2-4-2">
-												23-11-2020
-											</div>
-										</div>
-										<div class="swiper-slide swiper-slide-1" style="background-image:url(./assets/img/banner-1.jpg)">
-											<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
-												Application for 2020-2021 Forms 2 - 3 Admissions...
-											</div>
-											<div class="swiper-content swiper-content-1 text-f-2-4-2">
-												19-11-2020
-											</div>
-										</div>
-										<div class="swiper-slide swiper-slide-1" style="background-image:url(./assets/img/IMG_1339.JPG)">
-											<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
-												International Sustainable Development Competition Results
-											</div>
-											<div class="swiper-content swiper-content-1 text-f-2-4-2">
-												19-11-2020
-											</div>
-										</div>
-										<div class="swiper-slide swiper-slide-1" style="background-image:url(./assets/img/banner-2.jpg)">
-											<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
-												Talk for Form 3 Parents and Students on the Choice of HKDSE Subjects
-											</div>
-											<div class="swiper-content swiper-content-1 text-f-2-4-2">
-												17-11-2020
-											</div>
-										</div>
-										<div class="swiper-slide swiper-slide-1" style="background-image:url(./assets/img/spc-about5.png)">
-											<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
-												Positivity Ambassadors ready to serve the SPC community
-											</div>
-											<div class="swiper-content swiper-content-1 text-f-2-4-2">
-												13-11-2020
-											</div>
-										</div>
-										<!-- <div class="swiper-slide" style="background-image:url(./assets/img/spc-about6.png)">
-											<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
-												Careers and Life Planning Team
-											</div>
-										</div> -->
-										<!-- <div class="swiper-slide" style="background-image:url(./assets/img/spc-about7.png)">
-											<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
-												SPC Sports
-											</div>
-										</div> -->
-										<!-- <div class="swiper-slide" style="background-image:url(./assets/img/spc-about8.png)">
-											<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
-												SPC ACADEMY
-											</div>
-										</div> -->
-										<!-- <div class="swiper-slide" style="background-image:url(http://spc2021.vela.hk/upload_files/banner3/spc-about5.png)"></div> -->
-								</div>
-								<!-- Add Pagination -->
-								<div class="swiper-pagination mt-4"></div>
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
-						</div>
+			<div class="container d-flex justify-content-center">
+			<img src="./assets/img/gra-hat.png" 
+			style="width: 100px;
+			z-index:99;transform: translate(20px, 60%);"
+			alt="">
+		</div>
+	<div class="col-12" data-aos="fade-up">
+		<div class="jumbotron" style="opacity: 0.7">
+			<div class="container">
+				<p>AT St. Paul’s College</p>
+				<h4 class="spc-blue text-f-7-7-7 ">WE PROVIDE OPPORTUNITIES TO SUCCEED</h4>
+				<div class="mt-4 mb-2 text-h-2-4-2 ">
+					<a class="spc-btn-1 cta-red" style=" z-index: 99;" href="http://www.spc.edu.hk/news_detail.php?type=news&na_id=2928" target="_blank">
+						Read More
+						<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path></svg>
+					</a>
 				</div>
 			</div>
 		</div>
-
+		<!-- <img src="./assets/img/spc-bg.png" alt=""
+		class="col-12"
+		style="width: 800px; z-index: -1; margin-bottom: 100px; "
+		> -->
+	</div>
 	</section>
-	<section class="bg-white-2" style="background-color: #f8f9fa;">
-		<div class="container">
-			<h2 class="text-f-8-7-8 spc-blue text-center spc-line mb-4">Principal’s Message</h2>
-			<div class="d-flex justify-content-center">
-				<div class="aos-item" data-aos="fade-up">
-					<img class="col-12" src="./assets/img/img-principal.png" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-
 
 	<section class="pb-4 bg-gray">
 		<div class="container d-flex justify-content-center">
-			<h2 class="col-6 text-f-6-7-6 white text-center" style="z-index:22; background-color:#18345F; padding: 10px 40px">Around SPC</h2>
+			<h2 class="col-6 text-f-6-7-6 white text-center" style="z-index:22; background-color:#18345F; padding: 10px 40px;transform: translate(20px, -50%); ">Around SPC</h2>
 		</div>
 
 		<div class="container">
@@ -646,6 +646,84 @@
 				<!-- Notices -->
 			</div>
 		</div>
+	</section>
+	<section style="background-color: #18345F;opacity: 0.97;">
+		<div  class="container">
+			<div class="row d-flex justify-content-center">
+				<!-- <div class="row d-flex justify-content-center" style="transform: translate(0px, 20%);"> -->
+				<h2 class="col-3 text-f-8-7-8 white text-center" style="z-index:22; background-color:#18345F; padding: 10px 40px">News</h2>
+				<!-- <h2 class="text-f-8-7-8 white text-center spc-line">News</h2> -->
+				<p class="col-12 mt-4 text-h-2-4-2 white text-center">We’re a school that celebrates giving your all to everything.</p>
+				<div class="col-12 ">
+					<!-- Swiper -->
+							<div class="swiper-container swiper-container-1 mb-4">
+								<div class="swiper-wrapper mb-4">
+										<div class="swiper-slide swiper-slide-1" style="background-image:url(./assets/img/banner-3.jpg)">
+											<div class="title text-h-1-4-1 white" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+												Nelson Kei (Class of 2016) wins United College Ming De Scholarship 2020
+											</div>
+											<div class="swiper-content swiper-content-1 text-f-2-4-2">
+												23-11-2020
+											</div>
+										</div>
+										<div class="swiper-slide swiper-slide-1" style="background-image:url(./assets/img/banner-1.jpg)">
+											<div class="title text-h-1-4-1 white" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+												Application for 2020-2021 Forms 2 - 3 Admissions...
+											</div>
+											<div class="swiper-content swiper-content-1 text-f-2-4-2">
+												19-11-2020
+											</div>
+										</div>
+										<div class="swiper-slide swiper-slide-1" style="background-image:url(./assets/img/IMG_1339.JPG)">
+											<div class="title text-h-1-4-1 white" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+												International Sustainable Development Competition Results
+											</div>
+											<div class="swiper-content swiper-content-1 text-f-2-4-2">
+												19-11-2020
+											</div>
+										</div>
+										<div class="swiper-slide swiper-slide-1" style="background-image:url(./assets/img/banner-2.jpg)">
+											<div class="title text-h-1-4-1 white" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+												Talk for Form 3 Parents and Students on the Choice of HKDSE Subjects
+											</div>
+											<div class="swiper-content swiper-content-1 text-f-2-4-2">
+												17-11-2020
+											</div>
+										</div>
+										<div class="swiper-slide swiper-slide-1" style="background-image:url(./assets/img/spc-about5.png)">
+											<div class="title text-h-1-4-1 white" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+												Positivity Ambassadors ready to serve the SPC community
+											</div>
+											<div class="swiper-content swiper-content-1 text-f-2-4-2">
+												13-11-2020
+											</div>
+										</div>
+										<!-- <div class="swiper-slide" style="background-image:url(./assets/img/spc-about6.png)">
+											<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+												Careers and Life Planning Team
+											</div>
+										</div> -->
+										<!-- <div class="swiper-slide" style="background-image:url(./assets/img/spc-about7.png)">
+											<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+												SPC Sports
+											</div>
+										</div> -->
+										<!-- <div class="swiper-slide" style="background-image:url(./assets/img/spc-about8.png)">
+											<div class="title text-h-1-4-1" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+												SPC ACADEMY
+											</div>
+										</div> -->
+										<!-- <div class="swiper-slide" style="background-image:url(http://spc2021.vela.hk/upload_files/banner3/spc-about5.png)"></div> -->
+								</div>
+								<!-- Add Pagination -->
+								<div class="swiper-pagination mt-4"></div>
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+						</div>
+				</div>
+			</div>
+		</div>
+
 	</section>
 	<!-- footer -->
 		<!-- <hr> -->
