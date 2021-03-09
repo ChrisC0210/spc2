@@ -249,3 +249,12 @@
 #myBtn:hover {
   background-color: $spc-blue-600;
 }
+//hide video bar
+audio::-webkit-media-controls-timeline,
+video::-webkit-media-controls-timeline {
+    display: none;
+}
+audio::-webkit-media-controls,
+video::-webkit-media-controls {
+    display: none;
+}

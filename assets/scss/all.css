@@ -13162,6 +13162,16 @@ footer {
   background-color: #18345F;
 }
 
+audio::-webkit-media-controls-timeline,
+video::-webkit-media-controls-timeline {
+  display: none;
+}
+
+audio::-webkit-media-controls,
+video::-webkit-media-controls {
+  display: none;
+}
+
 .breadcrumb {
   background-color: #fefefe;
   padding: .75rem 0rem;
